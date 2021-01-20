@@ -1,0 +1,27 @@
+{
+  "name": "eartharoid.me",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "",
+  "dependencies": {
+    "vercel": "^21.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eartharoid/eartharoid.me.git"
+  },
+  "keywords": [
+    "hugo",
+    "bulma"
+  ],
+  "author": "eartharoid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eartharoid/eartharoid.me/issues"
+  },
+  "homepage": "https://github.com/eartharoid/eartharoid.me#readme"
+}
