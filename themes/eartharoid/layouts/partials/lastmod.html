@@ -1,0 +1,1 @@
+{{ .Lastmod.Format "2" }}{{ if in (slice 1 21 31) .Lastmod.Day}}<sup>st</sup>{{ else if in (slice 2 22) .Lastmod.Day}}<sup>nd</sup>{{ else if in (slice 3 23) .Lastmod.Day}}rd{{ else }}<sup>th</sup>{{ end }} {{ .Lastmod.Format "January 2006" }}

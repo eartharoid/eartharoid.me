@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on eartharoid</title>
+    <link>https://eartharoid.me/tags/</link>
+    <description>Recent content in Tags on eartharoid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>Isaac Saunders</copyright>
+    <lastBuildDate>Sun, 17 Jan 2021 21:31:46 +0000</lastBuildDate><atom:link href="https://eartharoid.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>discord</title>
+      <link>https://eartharoid.me/tags/discord/</link>
+      <pubDate>Sun, 17 Jan 2021 21:31:46 +0000</pubDate>
+      
+      <guid>https://eartharoid.me/tags/discord/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>node.js</title>
+      <link>https://eartharoid.me/tags/node.js/</link>
+      <pubDate>Sun, 17 Jan 2021 21:31:46 +0000</pubDate>
+      
+      <guid>https://eartharoid.me/tags/node.js/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

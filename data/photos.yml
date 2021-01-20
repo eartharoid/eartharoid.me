@@ -1,0 +1,7 @@
+photos:
+  - id: IMG_XXXXXX
+    location: England, UK
+    description: Some information about it
+  - id: IMG_YYYYYY
+    location: Scotland, UK
+    description: Some information about it

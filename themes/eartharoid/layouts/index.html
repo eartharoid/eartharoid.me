@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main>
+	{{- partial "fullheight-hero.html" . -}}
+	<section id='main' class='section'>
+		<container id='content' class='content container is-fluid'>
+			{{ .Content }}
+		</container>
+	</section>
+</main>
+{{ end }}

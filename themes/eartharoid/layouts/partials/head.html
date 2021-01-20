@@ -1,0 +1,75 @@
+<head>
+	<!-- meta -->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+	{{- if .Site.Params.primaryColour -}}
+	<meta name='theme-color' content='{{ .Site.Params.primaryColour }}'>
+	{{- end -}}
+
+	{{- if .IsHome -}}
+	<!-- <meta name='description' content='{{ with .Site.GetPage "/_index.md" }}{{ .Summary }}{{ end }}'> -->
+	<meta name='description' content='{{ .Summary }}'>
+
+	{{ if .Site.Params.keywords }}
+	<meta name='keywords' content='{{ .Site.Params.keywords }}'>
+	{{ end }}
+
+	{{- else -}}
+
+	<!-- <meta name='description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}'> -->
+	<meta name='description'
+		content='{{ if .Description }}{{ .Description }}{{ else }}{{ with .Site.GetPage "/_index.md" }}{{ .Summary }}{{ end }}{{ end }}'>
+	<meta name='keywords' content='{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}'>
+
+	{{ with .Params.date }}
+	<meta property='article:published_time' content='{{ .Format "2004-02-06T23:55:00+00:00" }}'>
+	{{ end }}
+
+	{{ with .Params.lastmod }}
+	<meta property='article:modified_time' content='{{ .Format "2004-02-06T23:55:00+00:00" }}'>
+	{{ end }}
+
+
+	{{- end -}}
+
+	{{ if .Site.Params.author -}}
+	<meta name='author' content='{{ .Params.author }}'>
+	{{- end }}
+
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+	{{ hugo.Generator }}
+
+	<title>{{ .Title }} • {{ .Site.Title }}</title>
+
+	<!-- links -->
+	<link rel='icon' href='{{ "favicon.ico" | absURL }}' type='image/icon'>
+	<link rel='stylesheet' href='{{ "css/global.css" | absURL }}'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'>
+	<link rel='stylesheet' id='themeCSS'>
+	<!-- <noscript> -->
+		<link rel='stylesheet' href='{{ "css/dark_theme.css" | absURL }}' media='(prefers-color-scheme: dark)'
+			id='darkThemeCSS'>
+		<link rel='stylesheet' href='{{ "css/light_theme.css" | absURL }}'
+			media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)' id='lightThemeCSS'>
+	<!-- </noscript> -->
+
+	<!-- scripts -->
+	<script defer src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
+	<script defer src='{{ "js/global.js" | absURL }}'></script>
+
+	<!-- styles -->
+	{{ $BgImgUrl := cond (not (isset .Params "hero")) .Site.Params.hero .Params.hero }}
+	<style>
+		.hero {
+			background-image: url('{{ $BgImgUrl }}');
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+				rgba(0, 0, 0, 0.5)),
+			url('{{ $BgImgUrl }}');
+			background-position: center;
+			background-size: cover;
+		}
+	</style>
+</head>

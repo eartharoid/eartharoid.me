@@ -1,0 +1,33 @@
+{{ define "main" }}
+<link rel='stylesheet' href='{{ "css/gallery/main.css" | absURL }}' />
+<noscript>
+	<link rel='stylesheet' href='{{ "css/gallery/noscript.css" | absURL }}' />
+</noscript>
+<main>
+	{{- partial "hero.html" . -}}
+	<!-- <section class='section'>
+		<container id='content' class='content container is-fluid'>
+			<!-/- <div class='box'> -/->
+				{{ .Content }}
+			<!-/- </div> -/->
+		</container>
+	</section> -->
+	<div id='main'>
+		{{ range .Pages }}
+			<article class='thumb'>
+				<!-- {{ $local := print .RelPermalink (.Param "featuredimage") | absURL }}
+				{{ $cdn := print .Site.Params.imageKit .RelPermalink (.Param "featuredimage")}}
+				{{ $img := cond .Site.IsServer $local $cdn }} -->
+			<a href='{{ .Permalink }}' class='image'><img src='{{ .Param "featuredimage" }}'
+					alt='{{ .Title }}' /></a>
+			<h2>{{ .Title }}</h2>
+		</article>
+		{{ end }}
+	</div>
+</main>
+<script src='{{ "js/gallery/jquery.min.js" | absURL }}'></script>
+<script src='{{ "js/gallery/browser.min.js" | absURL }}'></script>
+<script src='{{ "js/gallery/breakpoints.min.js" | absURL }}'></script>
+<script src='{{ "js/gallery/util.js" | absURL }}'></script>
+<script src='{{ "js/gallery/main.js" | absURL }}'></script>
+{{ end }}

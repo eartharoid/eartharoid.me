@@ -1,0 +1,123 @@
+{{ define "main" }}
+<main>
+	{{- partial "hero.html" . -}}
+	<section id='main' class='section'>
+		<!-- <container class='container is-fluid'> -->
+		<div class='columns'>
+			<div class='column'>
+				<div id='content' class='content box'>
+					{{ .Content }}
+				</div>
+			</div>
+			<div class='column is-desktop is-one-quarter'>
+				<div class='content box'>
+					{{ with .Params.tags }}
+					<div id='tags'>
+						<h6>Tags</h6>
+						<div class='tags'>
+							{{ range . }}
+							<a href='{{ (print "tags/" (urlize .) ) | absURL}}' class='tag is-primary'>{{ . }}</a>
+							{{ end }}
+						</div>
+					</div>
+					<hr>
+					{{ end }}
+					<div id='published'>
+						<h6>Published</h6>
+						<p>{{- partial "date.html" . -}}</p>
+					</div>
+					<hr>
+					<div id='lastmod'>
+						<h6>Last modified</h6>
+						<p>{{- partial "lastmod.html" . -}}</p>
+					</div>
+					{{ if and (gt .WordCount 400 ) (.Params.toc) }}
+					<hr>
+					<div id='toc'>
+						<h6>On this page</h6>
+						<p>{{ .TableOfContents }}</p>
+					</div>
+					{{ end }}
+				</div>
+				<!-- <div class='content box'>
+					<div id='related'>
+						<h6>Related</h6>
+						{{ $related := .Site.RegularPages.Related . | first 3 }}
+						{{ $related := .Site.RegularPages.RelatedIndices . "tags" }}
+						{{ println $related }}
+						{{ range $related }}
+						<li><a href='{{ .RelPermalink }}'>{{ .Title }}</a></li>
+						{{ end }}
+						<p>1</p>
+						<hr>
+						<p>2</p>
+					</div>
+				</div> -->
+				{{ with .NextInSection }}
+				<div class='content box'>
+					<div id='next'>
+						<h6>Next</h6>
+						<div class='block'>
+							<p class='title is-size-4'>
+								<a href='{{ .Permalink }}'>{{ .Title }}</a>
+							</p>
+							<p class='subtitle is-size-6'>
+								{{- partial "date.html" . -}}
+							</p>
+						</div>
+						<div class='block'>
+							<p>
+								{{ (truncate 128 "..." .Summary) | safeHTML }}
+								<!-- {{ .Summary | safeHTML }} -->
+							</p>
+						</div>
+						<div class='block'>
+							<a href='{{ .Permalink }}'>
+								<button class='button is-info'>
+									<span>Read more</span>
+									<span class='icon'>
+										<i class='fas fa-chevron-right'></i>
+									</span>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				{{ end }}
+
+				{{ with .PrevInSection }}
+				<div class='content box'>
+					<div id='previous'>
+						<h6>Previous</h6>
+						<div class='block'>
+							<p class='title is-size-4'>
+								<a href='{{ .Permalink }}'>{{ .Title }}</a>
+							</p>
+							<p class='subtitle is-size-6'>
+								{{- partial "date.html" . -}}
+							</p>
+						</div>
+						<div class='block'>
+							<p>
+								{{ (truncate 128 "..." .Summary) | safeHTML }}
+								<!-- {{ .Summary | safeHTML }} -->
+							</p>
+						</div>
+						<div class='block'>
+							<a href='{{ .Permalink }}'>
+								<button class='button is-info'>
+									<span>Read more</span>
+									<span class='icon'>
+										<i class='fas fa-chevron-right'></i>
+									</span>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+			<!-- </container> -->
+	</section>
+</main>
+{{ end }}

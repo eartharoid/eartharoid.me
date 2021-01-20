@@ -1,0 +1,48 @@
+<nav class='navbar is-dark is-transparent' role='navigation'>
+	<!-- is-fixed-top is-transparent -->
+	<div class='container'>
+		<div class='navbar-brand'>
+			<a href='{{ .Site.BaseURL }}' class='navbar-item'>
+				<img src='{{ .Site.Params.navbarLogo }}' alt='eartharoid'>
+			</a>
+			<span class='navbar-burger' data-target='primaryHeroNavbar'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</div>
+		<div id='primaryHeroNavbar' class='navbar-menu'>
+			<div class='navbar-end'>
+				{{ $currentPage := . }}
+				{{ range .Site.Menus.navbar }}
+				{{ if .HasChildren }}
+				<div class='navbar-item has-dropdown is-hoverable'> <!-- {{ if $currentPage.HasMenuCurrent "navbar" . }}is-active{{ end }} -->
+					<a href='{{ .URL | absURL }}' class='navbar-link' title='{{ .Name }}'>
+						{{ .Name }}
+					</a>
+
+					<div class='navbar-dropdown'>
+						{{ range .Children }}
+						<a href='{{ .URL | absURL }}' class='navbar-item' title='{{ .Name }}'> <!--{{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }} -->
+							{{ .Name }}
+						</a>
+						{{ end }}
+					</div>
+				</div>
+				<ul class="sub-menu">
+
+				</ul>
+				{{ else }}
+				<a href='{{ .URL | absURL }}' class='navbar-item {{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }}' title='{{ .Name }}'>
+					{{ .Name }}
+				</a>
+				{{ end }}
+				{{ end }}
+
+				<span class='navbar-item is-clickable' onClick='toggleTheme();' title='Toggle theme'>
+					<i id='themeIcon' class='fas fa-sun'></i>
+				</span>
+			</div>
+		</div>
+	</div>
+</nav>

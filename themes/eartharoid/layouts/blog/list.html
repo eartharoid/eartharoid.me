@@ -1,0 +1,101 @@
+{{ define "main" }}
+<main>
+	{{- partial "hero.html" . -}}
+	<section id='main' class='section'>
+		<container id='content' class='content container is-fluid'>
+			{{ .Content }}
+		</container>
+		<container class='container is-fluid'>
+			<div class='columns'>
+				<div class='column is-desktop is-two-thirds'>
+
+					{{ range .Pages }}
+					<div class='content box'>
+						<div class='block'>
+							<p class='title is-size-4'>
+								<a href='{{ .Permalink }}'>{{ .Title }}</a>
+							</p>
+							<p class='subtitle is-size-6'>
+								<!-- {{ .Date.Format "Monday, January 2, 2006" }} -->
+								{{- partial "date.html" . -}}
+							</p>
+							<p>
+								{{ with .Params.tags }}
+								<div class='tags'>
+									{{ range .}}
+									<a href='{{ (print "tags/" (urlize .) ) | absURL}}'
+										class='tag is-primary'>{{ . }}</a>
+									{{ end }}
+								</div>
+								{{ end }}
+							</p>
+						</div>
+						<div class='block'>
+							<p>
+								{{ .Summary | safeHTML }}
+							</p>
+						</div>
+						{{ if .Truncated }}
+						<div class='block'>
+							<a href='{{ .Permalink }}'>
+								<button class='button is-info'>
+									<span>Read more</span>
+									<span class='icon'>
+										<i class='fas fa-chevron-right'></i>
+									</span>
+								</button>
+							</a>
+						</div>
+						{{ end }}
+					</div>
+					{{ end }}
+				</div>
+				<div class='column'>
+					<div class='content box'>
+						<h6>Featured</h6>
+						{{ with .Params.featured }}
+						{{ with $.Site.GetPage "blog" (print . ".md") }}
+						<div class='block'>
+							<p class='title is-size-4'>
+								<a href='{{ .Permalink }}'>{{ .Title }}</a>
+							</p>
+							<p class='subtitle is-size-6'>
+								{{- partial "date.html" . -}}
+							</p>
+							<p>
+								{{ with .Params.tags }}
+								<div class='tags'>
+									{{ range .}}
+									<a href='{{ (print "tags/" (urlize .) ) | absURL}}'
+										class='tag is-primary'>{{ . }}</a>
+									{{ end }}
+								</div>
+								{{ end }}
+							</p>
+						</div>
+						<div class='block'>
+							<p>
+								<!-- {{ (truncate 256 "..." .Summary) | safeHTML }} -->
+								{{ (truncate 400 "..." .Summary) | safeHTML }}
+								<!-- {{ .Summary | safeHTML }} -->
+							</p>
+						</div>
+						<div class='block'>
+							<a href='{{ .Permalink }}'>
+								<button class='button is-info'>
+									<span>Read more</span>
+									<span class='icon'>
+										<i class='fas fa-chevron-right'></i>
+									</span>
+								</button>
+							</a>
+						</div>
+						{{ end }}
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</container>
+	</section>
+</main>
+{{ end }}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html {{ if .Site.LanguageCode }} lang='{{.Site.LanguageCode}}' {{ end }}>
+<!-- <html {{ if .Site.LanguageCode }} lang='{{.Site.LanguageCode}}' {{ end }} class='has-navbar-fixed-top'> -->
+{{- partial "head.html" . -}}
+
+<body>
+	{{- block "main" . }}{{- end }}
+	{{- partial "footer.html" . -}}
+</body>
+
+</html>

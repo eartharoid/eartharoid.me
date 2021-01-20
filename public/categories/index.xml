@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on eartharoid</title>
+    <link>https://eartharoid.me/categories/</link>
+    <description>Recent content in Categories on eartharoid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>Isaac Saunders</copyright>
+    <lastBuildDate>Sun, 17 Jan 2021 21:31:46 +0000</lastBuildDate><atom:link href="https://eartharoid.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>personal</title>
+      <link>https://eartharoid.me/categories/personal/</link>
+      <pubDate>Sun, 17 Jan 2021 21:31:46 +0000</pubDate>
+      
+      <guid>https://eartharoid.me/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

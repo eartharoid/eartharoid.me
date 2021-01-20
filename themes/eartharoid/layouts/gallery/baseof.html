@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html {{ if .Site.LanguageCode }} lang='{{.Site.LanguageCode}}' {{ end }}>
+<!-- <html {{ if .Site.LanguageCode }} lang='{{.Site.LanguageCode}}' {{ end }} class='has-navbar-fixed-top'> -->
+{{- partial "head.html" . -}}
+
+<body class='is-preload'>
+	<div id='wrapper'>
+	{{- block "main" . }}{{- end }}
+	{{- partial "footer.html" . -}}
+	</div>
+</body>
+
+</html>

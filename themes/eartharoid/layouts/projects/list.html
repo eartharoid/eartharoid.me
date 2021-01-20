@@ -1,0 +1,82 @@
+{{ define "main" }}
+<main>
+	{{- partial "hero.html" . -}}
+	<section id='main' class='section'>
+		<container id='content' class='content container is-fluid'>
+			{{ .Content }}
+		</container>
+		<container class='container is-fluid'>
+			<div class='columns'>
+				{{ range .Pages }}
+				<div class='column is-one-third-desktop'>
+					<div class='card'>
+						<!-- <div class='card-header'>
+							{{ with .Params.tags }}
+							<p class='p-3 tags'>
+								{{ range . }}
+								<a href='{{ (print "tags/" (urlize .) ) | absURL}}' class='tag is-primary'>{{ . }}</a>
+								{{ end }}
+							</p>
+							{{ end }}
+						</div> -->
+						<div class='card-content'>
+
+							<span class='columns'>
+								<a href='{{ .Permalink }}' class='column is-one-third is-tablet'>
+									<figure class='image is-3by3'>
+										<img src='{{ .Param "logo" }}' alt='Logo' style='max-width:15rem;'>
+									</figure>
+								</a>
+
+								<div class='column'>
+									<a href='{{ .Permalink }}' class='is-size-4'>
+										<h2>{{ .Title }}</h2>
+									</a>
+									{{ with .Params.tags }}
+									<p class='tags'>
+										{{ range . }}
+										<a href='{{ (print "tags/" (urlize .) ) | absURL}}'
+											class='tag is-primary'>{{ . }}</a>
+										{{ end }}
+									</p>
+									{{ end }}
+								</div>
+							</span>
+
+							<div class='columns'>
+								<div class='column'>
+									<p style='min-height:5rem;'>{{ .Description }}</p>
+									<a href='{{ .Permalink }}' class='card-footer-item'>
+										<button class='button is-info is-fullwidth'>
+											<span>View</span>
+											<span class='icon'>
+												<i class='fas fa-chevron-right'></i>
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						{{with .Param "links" }}
+						<div class='card-footer'>
+							{{ range . }}
+							<a href='{{ .url }}' class='card-footer-item' target='_blank'>
+								<button class='button'>
+									<span class='icon'>
+										<!-- color: {{ .colour }}; -->
+										<i class='{{ .icon }}'></i>
+									</span>
+									<span>{{ .name }}</span>
+								</button>
+							</a>
+							{{ end }}
+						</div>
+						{{ end }}
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</container>
+	</section>
+</main>
+{{ end }}

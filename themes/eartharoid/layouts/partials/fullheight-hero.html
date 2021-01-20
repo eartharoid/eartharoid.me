@@ -1,0 +1,169 @@
+<!-- <section class='hero is-fullheight-with-navbar'> -->
+<section class='hero is-dark is-fullheight'>
+	<div class='hero-head'>
+		{{- partial "navbar.html" . -}}
+	</div>
+
+	<div class='hero-body'>
+		<div class='container'>
+			<!-- has-text-centered -->
+			<div class='columns is-vcentered'>
+				<div id='big-text' class='column has-text-centered'>
+					<h1 class='ml1 is-relative'>
+						<span class='text-wrapper is-relative'>
+							<span class='letters'>Hello,</span>
+						</span>
+					</h1>
+					<h1 class='ml2 is-relative'>
+						<span class='text-wrapper is-relative'>
+							<span class='letters'>I'm Isaac.</span>
+						</span>
+					</h1>
+				</div>
+				<div class='column has-text-centered'>
+					<a class='arrows' href='#main'>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.arrows {
+		position: absolute;
+		margin-top: 2%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.arrows {
+			margin-top: -4rem;
+		}
+	}
+
+	.arrows span {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border-bottom: 5px solid white;
+		border-right: 5px solid white;
+		transform: rotate(45deg);
+		margin: -10px;
+		animation: scrolly_arrows 2s infinite;
+	}
+
+	.arrows span:nth-child(2) {
+		animation-delay: -0.2s;
+	}
+
+	.arrows span:nth-child(3) {
+		animation-delay: -0.4s;
+	}
+
+	@keyframes scrolly_arrows {
+		0% {
+			opacity: 0;
+			transform: rotate(45deg) translate(-20px, -20px);
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+			transform: rotate(45deg) translate(20px, 20px);
+		}
+	}
+
+	.ml1,
+	.ml2 {
+		font-weight: 900 !important;
+		/* font-size: 3.3em; */
+		font-size: 4em !important;
+		visibility: hidden;
+		color: white;
+	}
+
+	.ml1 .text-wrapper,
+	.ml2 .text-wrapper {
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	.ml1 .letter,
+	.ml2 .letter {
+		display: inline-block;
+		line-height: 1em;
+	}
+</style>
+
+<noscript>
+	<style>
+		.ml1,
+		.ml2 {
+			visibility: visible !important;
+		}
+	</style>
+</noscript>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js'></script>
+<script>
+	let ml1 = document.querySelector('.ml1 .letters');
+	ml1.innerHTML = ml1.textContent.replace(/\S/g, '<span class=\'letter\'>$&</span>');
+
+	let ml2 = document.querySelector('.ml2 .letters');
+	ml2.innerHTML = ml2.textContent.replace(/\S/g, '<span class=\'letter\'>$&</span>');
+
+	setTimeout(() => {
+		anime.timeline({
+				// loop: true
+				loop: false,
+			})
+			.add({
+				targets: '.ml1 .letter',
+				translateY: ['1.1em', 0],
+				translateZ: 0,
+				duration: 750,
+				delay: (el, i) => 50 * i,
+				begin: () => {
+					ml1.style.visibility = 'visible';
+				}
+			})
+			/* .add({
+						targets: '.ml1',
+						opacity: 0,
+						duration: 1000,
+						easing: 'easeOutExpo',
+						delay: 1000
+					}) */
+			.add({
+				targets: '.ml2 .letter',
+				translateY: ['1.1em', 0],
+				translateZ: 0,
+				duration: 750,
+				delay: (el, i) => 50 * i,
+				begin: () => {
+					ml2.style.visibility = 'visible';
+				}
+			})
+		/* .add({
+					targets: '.ml2',
+					opacity: 0,
+					duration: 1000,
+					easing: 'easeOutExpo',
+					delay: 1000
+				}) */
+		/* .add({
+			targets: '#big-text',
+			opacity: 0,
+			duration: 1000,
+			easing: 'easeOutExpo',
+			delay: 1000
+		}) */
+		;
+	}, 2000);
+</script>

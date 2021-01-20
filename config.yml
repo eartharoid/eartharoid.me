@@ -1,0 +1,115 @@
+baseURL: 'https://eartharoid.me'
+languageCode: 'en-gb'
+title: eartharoid
+copyright: '&copy; 2021 Isaac Saunders'
+# copyright: 'Isaac Saunders'
+theme: eartharoid
+enableEmoji: true
+enableGitInfo: true
+params: 
+  hero: 'https://ik.imagekit.io/eartharoid/images/HIGH-RES-earth-SunSet-FromSpace-COMPRESSED.jpg?tr=w-1920,h-1080'
+  navbarLogo: 'https://ik.imagekit.io/eartharoid/logo/profile-bg-removed-500.png?tr=w-400,h-100,cm-extract,x-50,y-200'
+  # navbarLogo: 'https://ik.imagekit.io/eartharoid/logo/transparent/transparent-default-monochrome-white.png?tr=w-367,h-64,c-force'
+  primaryColour: '#00C4EE'
+  keywords: 'eartharoid, Isaac'
+  footer: |
+    Created with [Hugo](https://gohugo.io/) by Isaac.
+
+    This website is [open source](https://github.com/eartharoid/eartharoid.me).
+# sectionPagesMenu: navbar # automated
+menu:
+  navbar:
+    - identifier: home
+      name: Home
+      title: Home
+      url: /
+      weight: 10
+    - identifier: about
+      name: About
+      title: About me
+      url: /about/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      title: My projects
+      url: /projects/
+      weight: 30
+    # - identifier: project-1
+    #   name: Project 1
+    #   title: P 1
+    #   url: /projects/1
+    #   parent: projects
+    - identifier: blog
+      name: Blog
+      title: My blog
+      url: /blog/
+      weight: 40
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery/
+      weight: 50
+    - identifier: contact
+      name: Contact
+      title: Contact me
+      url: /contact/
+      weight: 60
+  socialIcons:
+    - identifier: github
+      name: GitHub
+      url: 'https://github.com/eartharoid'
+      params:
+        icon: 'fab fa-github'
+      weight: 10
+    - identifier: discord
+      name: Discord server
+      url: 'https://go.eartharoid.me/discord'
+      params:
+        icon: 'fab fa-discord'
+      weight: 20
+    - identifier: instagram
+      name: Instagram
+      url: 'https://instagram.com/eartharoid'
+      params:
+        icon: 'fab fa-instagram'
+      weight: 30
+    - identifier: twitter
+      name: Twitter
+      url: 'https://twitter.com/eartharoid'
+      params:
+        icon: 'fab fa-twitter'
+      weight: 40
+    - identifier: kofi
+      name: Ko-fi
+      url: 'https://ko-fi.com/eartharoid'
+      params:
+        icon: 'fas fa-coffee'
+      weight: 50
+# outputs:
+#   home:
+#     - HTML
+#   about:
+#     - HTML
+#   blog:
+#     - HTML
+#     - JSON
+#   contact:
+#     - HTML
+#   projects:
+#     - HTML
+#     - JSON
+#   gallery:
+#     - HTML
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ''
+    lineAnchors: ''
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: monokai
+    tabWidth: 4

@@ -1,0 +1,8 @@
+[
+	{{ range .Pages }}
+	{
+		"title": "{{ .Title }}",
+		"url": "{{ .URL }}"
+	}
+	{{ end }}
+]
