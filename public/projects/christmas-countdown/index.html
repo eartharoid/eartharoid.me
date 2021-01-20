@@ -14,7 +14,7 @@
 	
 
 	
-	<meta property='article:modified_time' content='17031-17-21T179:4646:00&#43;00:00'>
+	<meta property='article:modified_time' content='20021-20-21T207:22:00&#43;00:00'>
 	
 
 	<meta property="og:title" content="Christmas Countdown" />
@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://christmascountdown.live/img/logo/red/santa-outline.png" />
 <meta property="og:image" content="https://ik.imagekit.io/eartharoid/christmas-countdown/bg/default.jpg?tr=w-1920,h-1280,c-force" />
 <meta property="article:published_time" content="2021-01-17T21:31:46+00:00" />
-<meta property="article:modified_time" content="2021-01-17T21:31:46+00:00" />
+<meta property="article:modified_time" content="2021-01-20T19:21:02+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://christmascountdown.live/img/logo/red/santa-outline.png"/>
@@ -40,9 +40,13 @@
 	<link rel='icon' href='https://eartharoid.me/favicon.ico' type='image/icon'>
 	<link rel='stylesheet' href='https://eartharoid.me/css/global.css'>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
-		media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+	<link rel='stylesheet' id='themeCSS'>
+	
+		<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'
+			id='darkThemeCSS'>
+		<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
+			media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)' id='lightThemeCSS'>
+	
 
 	
 	<script defer src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
@@ -80,41 +84,45 @@
 				
 				
 				
-				<a href='/' class='navbar-item '>
+				<a href='https://eartharoid.me/' class='navbar-item ' title='Home'>
 					Home
 				</a>
 				
 				
 				
-				<a href='/about/' class='navbar-item '>
+				<a href='https://eartharoid.me/about/' class='navbar-item ' title='About'>
 					About
 				</a>
 				
 				
 				
-				<a href='/projects/' class='navbar-item '>
+				<a href='https://eartharoid.me/projects/' class='navbar-item ' title='Projects'>
 					Projects
 				</a>
 				
 				
 				
-				<a href='/blog/' class='navbar-item '>
+				<a href='https://eartharoid.me/blog/' class='navbar-item ' title='Blog'>
 					Blog
 				</a>
 				
 				
 				
-				<a href='/gallery/' class='navbar-item '>
+				<a href='https://eartharoid.me/gallery/' class='navbar-item ' title='Gallery'>
 					Gallery
 				</a>
 				
 				
 				
-				<a href='/contact/' class='navbar-item '>
+				<a href='https://eartharoid.me/contact/' class='navbar-item ' title='Contact'>
 					Contact
 				</a>
 				
 				
+
+				<span class='navbar-item is-clickable' onClick='toggleTheme();' title='Toggle theme'>
+					<i id='themeIcon' class='fas fa-sun'></i>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -126,7 +134,9 @@
 				Christmas Countdown
 			</h1>
 			<h2 class='subtitle'>
+				
 				A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.
+				
 			</h2>
 		</div>
 	</div>
@@ -135,18 +145,33 @@
 		<div class='columns'>
 			<div class='column is-desktop is-one-quarter'>
 				<div class='content box'>
+					<div class='block'>
+						<a href='../'>
+							<button class='button is-primary is-fullwidth'>
+								<span class='icon'>
+									<i class='fas fa-chevron-left'></i>
+								</span>
+								<span>Back to my projects</span>
+							</button>
+						</a>
+					</div>
 					<div id='information'>
 						<h6>Information</h6>
 						<p>A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.</p>
 						
-						<a href='https://eartharoid.me/tags/node.js' class='tag is-primary'>node.js</a>
-						
-						<a href='https://eartharoid.me/tags/discord' class='tag is-primary'>discord</a>
+						<div class='tags'>
+							
+							<a href='https://eartharoid.me/tags/node.js' class='tag is-primary'>node.js</a>
+							
+							<a href='https://eartharoid.me/tags/discord' class='tag is-primary'>discord</a>
+							
+						</div>
 						
 					</div>
 					<hr>
 					<div id='links'>
 						<h6>Links</h6>
+						
 						
 						<div class='field is-grouped'>
 							<a href='https://christmascountdown.live' target='_blank' class='control'>
@@ -171,6 +196,7 @@
 								</button>
 							</a>
 						</div>
+						
 						
 					</div>
 					
@@ -211,53 +237,69 @@
 			
 	</section>
 </main>
-<footer class='footer'>
+<footer class='footer mb-0 pb-6'>
 	<div class='has-text-centered'>
 		<p class='block'>
 			
+			
 			<a href='https://github.com/eartharoid' title='GitHub' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-github'></i>
 				</span>
 			</a>
 			
 			<a href='https://go.eartharoid.me/discord' title='Discord server' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-discord'></i>
 				</span>
 			</a>
 			
 			<a href='https://instagram.com/eartharoid' title='Instagram' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-instagram'></i>
 				</span>
 			</a>
 			
 			<a href='https://twitter.com/eartharoid' title='Twitter' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-twitter'></i>
 				</span>
 			</a>
 			
 			<a href='https://ko-fi.com/eartharoid' title='Ko-fi' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fas fa-coffee'></i>
 				</span>
 			</a>
 			
+			
 		</p>
 		<p class='block'>
+			&copy; 2021 Isaac Saunders
 			
-			&copy; 19038 Isaac Saunders
-
 
 			
-			<p>Created with Hugo by Isaac.</p>
+			<p>Created with <a href="https://gohugo.io/">Hugo</a> by Isaac.</p>
 <p>This website is <a href="https://github.com/eartharoid/eartharoid.me">open source</a>.</p>
 
 			
 		</p>
-
+		<p class='block mt-4'>
+			<a href='https://bulma.io'>
+				<noscript>
+					<img src='https://eartharoid.me/images/bulma-white.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: dark)'>
+					<img src='https://eartharoid.me/images/bulma-black.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+				</noscript>
+				<img alt='Made with Bulma' width='128' height='24' id='madeWithBulma'>
+			</a>
+		</p>
 	</div>
 </footer></body>
 

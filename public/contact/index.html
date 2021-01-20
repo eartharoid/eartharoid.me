@@ -8,11 +8,13 @@
 	<meta name='description'
 		content='About me Hi, I&rsquo;m Isaac, a 16 year-old student from England. I write code, think about code, procrastinate (a lot), and occasionally do photography.
 👍
-console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
+console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 Portfolio My skills My work '>
 	<meta name='keywords' content='eartharoid, Isaac'>
 
 	
 
+	
+	<meta property='article:modified_time' content='20021-20-21T207:22:00&#43;00:00'>
 	
 
 	<meta property="og:title" content="Contact me" />
@@ -33,9 +35,13 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 	<link rel='icon' href='https://eartharoid.me/favicon.ico' type='image/icon'>
 	<link rel='stylesheet' href='https://eartharoid.me/css/global.css'>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
-		media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+	<link rel='stylesheet' id='themeCSS'>
+	
+		<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'
+			id='darkThemeCSS'>
+		<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
+			media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)' id='lightThemeCSS'>
+	
 
 	
 	<script defer src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
@@ -73,41 +79,45 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 				
 				
 				
-				<a href='/' class='navbar-item '>
+				<a href='https://eartharoid.me/' class='navbar-item ' title='Home'>
 					Home
 				</a>
 				
 				
 				
-				<a href='/about/' class='navbar-item '>
+				<a href='https://eartharoid.me/about/' class='navbar-item ' title='About'>
 					About
 				</a>
 				
 				
 				
-				<a href='/projects/' class='navbar-item '>
+				<a href='https://eartharoid.me/projects/' class='navbar-item ' title='Projects'>
 					Projects
 				</a>
 				
 				
 				
-				<a href='/blog/' class='navbar-item '>
+				<a href='https://eartharoid.me/blog/' class='navbar-item ' title='Blog'>
 					Blog
 				</a>
 				
 				
 				
-				<a href='/gallery/' class='navbar-item '>
+				<a href='https://eartharoid.me/gallery/' class='navbar-item ' title='Gallery'>
 					Gallery
 				</a>
 				
 				
 				
-				<a href='/contact/' class='navbar-item is-active'>
+				<a href='https://eartharoid.me/contact/' class='navbar-item is-active' title='Contact'>
 					Contact
 				</a>
 				
 				
+
+				<span class='navbar-item is-clickable' onClick='toggleTheme();' title='Toggle theme'>
+					<i id='themeIcon' class='fas fa-sun'></i>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -120,6 +130,8 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 			</h1>
 			<h2 class='subtitle'>
 				
+				
+				
 			</h2>
 		</div>
 	</div>
@@ -130,53 +142,69 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 		<p class='is-size-2'>_default page</p>
 	</section>
 </main>
-<footer class='footer'>
+<footer class='footer mb-0 pb-6'>
 	<div class='has-text-centered'>
 		<p class='block'>
 			
+			
 			<a href='https://github.com/eartharoid' title='GitHub' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-github'></i>
 				</span>
 			</a>
 			
 			<a href='https://go.eartharoid.me/discord' title='Discord server' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-discord'></i>
 				</span>
 			</a>
 			
 			<a href='https://instagram.com/eartharoid' title='Instagram' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-instagram'></i>
 				</span>
 			</a>
 			
 			<a href='https://twitter.com/eartharoid' title='Twitter' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-twitter'></i>
 				</span>
 			</a>
 			
 			<a href='https://ko-fi.com/eartharoid' title='Ko-fi' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fas fa-coffee'></i>
 				</span>
 			</a>
 			
+			
 		</p>
 		<p class='block'>
+			&copy; 2021 Isaac Saunders
 			
-			&copy; 19038 Isaac Saunders
-
 
 			
-			<p>Created with Hugo by Isaac.</p>
+			<p>Created with <a href="https://gohugo.io/">Hugo</a> by Isaac.</p>
 <p>This website is <a href="https://github.com/eartharoid/eartharoid.me">open source</a>.</p>
 
 			
 		</p>
-
+		<p class='block mt-4'>
+			<a href='https://bulma.io'>
+				<noscript>
+					<img src='https://eartharoid.me/images/bulma-white.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: dark)'>
+					<img src='https://eartharoid.me/images/bulma-black.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+				</noscript>
+				<img alt='Made with Bulma' width='128' height='24' id='madeWithBulma'>
+			</a>
+		</p>
 	</div>
 </footer></body>
 

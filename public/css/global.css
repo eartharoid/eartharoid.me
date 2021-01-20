@@ -1,3 +1,11 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.navbar,
+.navbar-menu {
+	color: white;
+	/* idk why but the light theme (Fatly) refuses to have a transparent navbar,
+	it's always dark grey. it doesn't look bad, but transparent looks better. */
+	background-color: rgba(0, 0, 0, 0) !important;
+}

@@ -6,24 +6,24 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'><meta name='theme-color' content='#00C4EE'>
 	<meta name='description'
-		content='About me Hi, I&rsquo;m Isaac, a 16 year-old student from England. I write code, think about code, procrastinate (a lot), and occasionally do photography.
-👍
-console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
+		content='Here&#39;s all of my personal projects'>
 	<meta name='keywords' content='eartharoid, Isaac'>
 
 	
 
 	
+	<meta property='article:modified_time' content='20021-20-21T207:22:00&#43;00:00'>
+	
 
 	<meta property="og:title" content="My projects" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Here&#39;s all of my personal projects" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://eartharoid.me/projects/" />
-<meta property="og:updated_time" content="2021-01-17T21:31:46+00:00" />
+
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My projects"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Here&#39;s all of my personal projects"/>
 
 	<meta name="generator" content="Hugo 0.80.0" />
 
@@ -33,9 +33,13 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 	<link rel='icon' href='https://eartharoid.me/favicon.ico' type='image/icon'>
 	<link rel='stylesheet' href='https://eartharoid.me/css/global.css'>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'>
-	<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
-		media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+	<link rel='stylesheet' id='themeCSS'>
+	
+		<link rel='stylesheet' href='https://eartharoid.me/css/dark_theme.css' media='(prefers-color-scheme: dark)'
+			id='darkThemeCSS'>
+		<link rel='stylesheet' href='https://eartharoid.me/css/light_theme.css'
+			media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)' id='lightThemeCSS'>
+	
 
 	
 	<script defer src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
@@ -73,41 +77,45 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 				
 				
 				
-				<a href='/' class='navbar-item '>
+				<a href='https://eartharoid.me/' class='navbar-item ' title='Home'>
 					Home
 				</a>
 				
 				
 				
-				<a href='/about/' class='navbar-item '>
+				<a href='https://eartharoid.me/about/' class='navbar-item ' title='About'>
 					About
 				</a>
 				
 				
 				
-				<a href='/projects/' class='navbar-item is-active'>
+				<a href='https://eartharoid.me/projects/' class='navbar-item is-active' title='Projects'>
 					Projects
 				</a>
 				
 				
 				
-				<a href='/blog/' class='navbar-item '>
+				<a href='https://eartharoid.me/blog/' class='navbar-item ' title='Blog'>
 					Blog
 				</a>
 				
 				
 				
-				<a href='/gallery/' class='navbar-item '>
+				<a href='https://eartharoid.me/gallery/' class='navbar-item ' title='Gallery'>
 					Gallery
 				</a>
 				
 				
 				
-				<a href='/contact/' class='navbar-item '>
+				<a href='https://eartharoid.me/contact/' class='navbar-item ' title='Contact'>
 					Contact
 				</a>
 				
 				
+
+				<span class='navbar-item is-clickable' onClick='toggleTheme();' title='Toggle theme'>
+					<i id='themeIcon' class='fas fa-sun'></i>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -120,6 +128,8 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 			</h1>
 			<h2 class='subtitle'>
 				
+				Here&#39;s all of my personal projects
+				
 			</h2>
 		</div>
 	</div>
@@ -130,37 +140,113 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 		<container class='container is-fluid'>
 			<div class='columns'>
 				
-				<div class='column is-one-quarter'>
+				<div class='column is-one-third-desktop'>
 					<div class='card'>
 						
-						<div class='card-image'>
-							<a href='https://eartharoid.me/projects/christmas-countdown/'>
-								<figure class='image is-3by3'>
-									<img src='https://ik.imagekit.io/eartharoid/christmas-countdown/logo/santa-outline.png' alt='Logo'>
-								</figure>
-							</a>
-						</div>
 						<div class='card-content'>
-							<p>
-								
-								<a href='https://eartharoid.me/tags/node.js' class='tag is-primary'>node.js</a>
-								
-								<a href='https://eartharoid.me/tags/discord' class='tag is-primary'>discord</a>
-								
-							</p>
-							<a href='https://eartharoid.me/projects/christmas-countdown/'>
-								<h2 class='is-size-4'>Christmas Countdown</h2>
-							</a>
-							<p>A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.</p>
+
+							<span class='columns'>
+								<a href='https://eartharoid.me/projects/discord-tickets/' class='column is-one-third is-tablet'>
+									<figure class='image is-3by3'>
+										<img src='https://ik.imagekit.io/eartharoid/projects/discord-tickets/dark-logo-transparent.png' alt='Logo' style='max-width:15rem;'>
+									</figure>
+								</a>
+
+								<div class='column'>
+									<a href='https://eartharoid.me/projects/discord-tickets/' class='is-size-4'>
+										<h2>Discord Tickets</h2>
+									</a>
+									
+									<p class='tags'>
+										
+										<a href='https://eartharoid.me/tags/node.js'
+											class='tag is-primary'>node.js</a>
+										
+										<a href='https://eartharoid.me/tags/discord'
+											class='tag is-primary'>discord</a>
+										
+									</p>
+									
+								</div>
+							</span>
+
+							<div class='columns'>
+								<div class='column'>
+									<p style='min-height:5rem;'>An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.</p>
+									<a href='https://eartharoid.me/projects/discord-tickets/' class='card-footer-item'>
+										<button class='button is-info is-fullwidth'>
+											<span>View</span>
+											<span class='icon'>
+												<i class='fas fa-chevron-right'></i>
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
 						</div>
-						<a href='https://eartharoid.me/projects/christmas-countdown/' class='card-footer-item'>
-							<button class='button is-info is-fullwidth'>
-								<span>View</span>
-								<span class='icon'>
-									<i class='fas fa-chevron-right'></i>
-								</span>
-							</button>
-						</a>
+						
+						<div class='card-footer'>
+							
+							<a href='https://github.com/eartharoid/DiscordTickets' class='card-footer-item' target='_blank'>
+								<button class='button'>
+									<span class='icon'>
+										
+										<i class='fab fa-github'></i>
+									</span>
+									<span>GitHub</span>
+								</button>
+							</a>
+							
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class='column is-one-third-desktop'>
+					<div class='card'>
+						
+						<div class='card-content'>
+
+							<span class='columns'>
+								<a href='https://eartharoid.me/projects/christmas-countdown/' class='column is-one-third is-tablet'>
+									<figure class='image is-3by3'>
+										<img src='https://ik.imagekit.io/eartharoid/christmas-countdown/logo/santa-outline.png' alt='Logo' style='max-width:15rem;'>
+									</figure>
+								</a>
+
+								<div class='column'>
+									<a href='https://eartharoid.me/projects/christmas-countdown/' class='is-size-4'>
+										<h2>Christmas Countdown</h2>
+									</a>
+									
+									<p class='tags'>
+										
+										<a href='https://eartharoid.me/tags/node.js'
+											class='tag is-primary'>node.js</a>
+										
+										<a href='https://eartharoid.me/tags/discord'
+											class='tag is-primary'>discord</a>
+										
+									</p>
+									
+								</div>
+							</span>
+
+							<div class='columns'>
+								<div class='column'>
+									<p style='min-height:5rem;'>A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.</p>
+									<a href='https://eartharoid.me/projects/christmas-countdown/' class='card-footer-item'>
+										<button class='button is-info is-fullwidth'>
+											<span>View</span>
+											<span class='icon'>
+												<i class='fas fa-chevron-right'></i>
+											</span>
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						
 						<div class='card-footer'>
 							
 							<a href='https://christmascountdown.live' class='card-footer-item' target='_blank'>
@@ -184,6 +270,7 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 							</a>
 							
 						</div>
+						
 					</div>
 				</div>
 				
@@ -191,53 +278,69 @@ console.log(&#39;hello world&#39;); h1 h2 h3 h4 h5 h6 '>
 		</container>
 	</section>
 </main>
-<footer class='footer'>
+<footer class='footer mb-0 pb-6'>
 	<div class='has-text-centered'>
 		<p class='block'>
 			
+			
 			<a href='https://github.com/eartharoid' title='GitHub' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-github'></i>
 				</span>
 			</a>
 			
 			<a href='https://go.eartharoid.me/discord' title='Discord server' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-discord'></i>
 				</span>
 			</a>
 			
 			<a href='https://instagram.com/eartharoid' title='Instagram' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-instagram'></i>
 				</span>
 			</a>
 			
 			<a href='https://twitter.com/eartharoid' title='Twitter' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fab fa-twitter'></i>
 				</span>
 			</a>
 			
 			<a href='https://ko-fi.com/eartharoid' title='Ko-fi' target='_blank'>
 				<span class='icon is-large'>
+					
 					<i class='fa-lg fas fa-coffee'></i>
 				</span>
 			</a>
 			
+			
 		</p>
 		<p class='block'>
+			&copy; 2021 Isaac Saunders
 			
-			&copy; 19038 Isaac Saunders
-
 
 			
-			<p>Created with Hugo by Isaac.</p>
+			<p>Created with <a href="https://gohugo.io/">Hugo</a> by Isaac.</p>
 <p>This website is <a href="https://github.com/eartharoid/eartharoid.me">open source</a>.</p>
 
 			
 		</p>
-
+		<p class='block mt-4'>
+			<a href='https://bulma.io'>
+				<noscript>
+					<img src='https://eartharoid.me/images/bulma-white.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: dark)'>
+					<img src='https://eartharoid.me/images/bulma-black.png' alt='Made with Bulma' width='128' height='24'
+						media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
+				</noscript>
+				<img alt='Made with Bulma' width='128' height='24' id='madeWithBulma'>
+			</a>
+		</p>
 	</div>
 </footer></body>
 
