@@ -1,12 +1,14 @@
 <footer class='footer mb-0 pb-6'>
 	<div class='has-text-centered'>
 		<p class='block'>
-			{{ range .Site.Menus.socialicons }}
+			{{ with .Site.Menus.socialicons }}
+			{{ range . }}
 			<a href='{{ .URL }}' title='{{ .Name }}' target='_blank'>
 				<span class='icon is-large'>
 					<i class='fa-lg {{ with .Params.icon }}{{- . -}}{{ end }}'></i>
 				</span>
 			</a>
+			{{ end }}
 			{{ end }}
 		</p>
 		<p class='block'>
