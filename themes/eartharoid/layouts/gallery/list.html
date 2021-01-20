@@ -1,7 +1,7 @@
 {{ define "main" }}
-<link rel='stylesheet' href='{{ "css/gallery/main.css" | absURL }}' />
+<link rel='stylesheet' href='{{ "css/gallery/main.css" | relURL }}' />
 <noscript>
-	<link rel='stylesheet' href='{{ "css/gallery/noscript.css" | absURL }}' />
+	<link rel='stylesheet' href='{{ "css/gallery/noscript.css" | relURL }}' />
 </noscript>
 <main>
 	{{- partial "hero.html" . -}}
@@ -15,7 +15,7 @@
 	<div id='main'>
 		{{ range .Pages }}
 			<article class='thumb'>
-				<!-- {{ $local := print .RelPermalink (.Param "featuredimage") | absURL }}
+				<!-- {{ $local := print .RelPermalink (.Param "featuredimage") | relURL }}
 				{{ $cdn := print .Site.Params.imageKit .RelPermalink (.Param "featuredimage")}}
 				{{ $img := cond .Site.IsServer $local $cdn }} -->
 			<a href='{{ .Permalink }}' class='image'><img src='{{ .Param "featuredimage" }}'
@@ -25,9 +25,9 @@
 		{{ end }}
 	</div>
 </main>
-<script src='{{ "js/gallery/jquery.min.js" | absURL }}'></script>
-<script src='{{ "js/gallery/browser.min.js" | absURL }}'></script>
-<script src='{{ "js/gallery/breakpoints.min.js" | absURL }}'></script>
-<script src='{{ "js/gallery/util.js" | absURL }}'></script>
-<script src='{{ "js/gallery/main.js" | absURL }}'></script>
+<script src='{{ "js/gallery/jquery.min.js" | relURL }}'></script>
+<script src='{{ "js/gallery/browser.min.js" | relURL }}'></script>
+<script src='{{ "js/gallery/breakpoints.min.js" | relURL }}'></script>
+<script src='{{ "js/gallery/util.js" | relURL }}'></script>
+<script src='{{ "js/gallery/main.js" | relURL }}'></script>
 {{ end }}

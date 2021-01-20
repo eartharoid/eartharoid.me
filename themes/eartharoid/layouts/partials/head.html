@@ -45,20 +45,20 @@
 	<title>{{ .Title }} • {{ .Site.Title }}</title>
 
 	<!-- links -->
-	<link rel='icon' href='{{ "favicon.ico" | absURL }}' type='image/icon'>
-	<link rel='stylesheet' href='{{ "css/global.css" | absURL }}'>
+	<link rel='icon' href='{{ "favicon.ico" | relURL }}' type='image/icon'>
+	<link rel='stylesheet' href='{{ "css/global.css" | relURL }}'>
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'>
 	<link rel='stylesheet' id='themeCSS'>
 	<!-- <noscript> -->
-		<link rel='stylesheet' href='{{ "css/dark_theme.css" | absURL }}' media='(prefers-color-scheme: dark)'
+		<link rel='stylesheet' href='{{ "css/dark_theme.css" | relURL }}' media='(prefers-color-scheme: dark)'
 			id='darkThemeCSS'>
-		<link rel='stylesheet' href='{{ "css/light_theme.css" | absURL }}'
+		<link rel='stylesheet' href='{{ "css/light_theme.css" | relURL }}'
 			media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)' id='lightThemeCSS'>
 	<!-- </noscript> -->
 
 	<!-- scripts -->
 	<script defer src='https://use.fontawesome.com/releases/v5.14.0/js/all.js'></script>
-	<script defer src='{{ "js/global.js" | absURL }}'></script>
+	<script defer src='{{ "js/global.js" | relURL }}'></script>
 
 	<!-- styles -->
 	{{ $BgImgUrl := cond (not (isset .Params "hero")) .Site.Params.hero .Params.hero }}

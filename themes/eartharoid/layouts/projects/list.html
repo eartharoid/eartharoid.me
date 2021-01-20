@@ -14,7 +14,7 @@
 							{{ with .Params.tags }}
 							<p class='p-3 tags'>
 								{{ range . }}
-								<a href='{{ (print "tags/" (urlize .) ) | absURL}}' class='tag is-primary'>{{ . }}</a>
+								<a href='{{ (print "tags/" (urlize .) ) | relURL}}' class='tag is-primary'>{{ . }}</a>
 								{{ end }}
 							</p>
 							{{ end }}
@@ -35,7 +35,7 @@
 									{{ with .Params.tags }}
 									<p class='tags'>
 										{{ range . }}
-										<a href='{{ (print "tags/" (urlize .) ) | absURL}}'
+										<a href='{{ (print "tags/" (urlize .) ) | relURL}}'
 											class='tag is-primary'>{{ . }}</a>
 										{{ end }}
 									</p>

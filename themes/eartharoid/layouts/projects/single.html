@@ -22,7 +22,7 @@
 						{{ with .Params.tags }}
 						<div class='tags'>
 							{{ range .}}
-							<a href='{{ (print "tags/" (urlize .) ) | absURL}}' class='tag is-primary'>{{ . }}</a>
+							<a href='{{ (print "tags/" (urlize .) ) | relURL}}' class='tag is-primary'>{{ . }}</a>
 							{{ end }}
 						</div>
 						{{ end }}

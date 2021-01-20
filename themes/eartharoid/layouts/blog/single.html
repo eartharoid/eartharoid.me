@@ -16,7 +16,7 @@
 						<h6>Tags</h6>
 						<div class='tags'>
 							{{ range . }}
-							<a href='{{ (print "tags/" (urlize .) ) | absURL}}' class='tag is-primary'>{{ . }}</a>
+							<a href='{{ (print "tags/" (urlize .) ) | relURL}}' class='tag is-primary'>{{ . }}</a>
 							{{ end }}
 						</div>
 					</div>

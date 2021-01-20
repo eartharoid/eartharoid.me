@@ -17,13 +17,13 @@
 				{{ range .Site.Menus.navbar }}
 				{{ if .HasChildren }}
 				<div class='navbar-item has-dropdown is-hoverable'> <!-- {{ if $currentPage.HasMenuCurrent "navbar" . }}is-active{{ end }} -->
-					<a href='{{ .URL | absURL }}' class='navbar-link' title='{{ .Name }}'>
+					<a href='{{ .URL | relURL }}' class='navbar-link' title='{{ .Name }}'>
 						{{ .Name }}
 					</a>
 
 					<div class='navbar-dropdown'>
 						{{ range .Children }}
-						<a href='{{ .URL | absURL }}' class='navbar-item' title='{{ .Name }}'> <!--{{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }} -->
+						<a href='{{ .URL | relURL }}' class='navbar-item' title='{{ .Name }}'> <!--{{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }} -->
 							{{ .Name }}
 						</a>
 						{{ end }}
@@ -33,7 +33,7 @@
 
 				</ul>
 				{{ else }}
-				<a href='{{ .URL | absURL }}' class='navbar-item {{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }}' title='{{ .Name }}'>
+				<a href='{{ .URL | relURL }}' class='navbar-item {{ if $currentPage.IsMenuCurrent "navbar" . }}is-active{{ end }}' title='{{ .Name }}'>
 					{{ .Name }}
 				</a>
 				{{ end }}
