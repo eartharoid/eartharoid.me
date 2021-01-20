@@ -58,32 +58,37 @@ menu:
     - identifier: github
       name: GitHub
       url: 'https://github.com/eartharoid'
-      params:
-        icon: 'fab fa-github'
+      # params:
+      #   icon: 'fab fa-github'
+      pre: 'fab fa-github'
       weight: 10
     - identifier: discord
       name: Discord server
       url: 'https://go.eartharoid.me/discord'
-      params:
-        icon: 'fab fa-discord'
+      # params:
+      #   icon: 'fab fa-discord'
+      pre: 'fab fa-discord'
       weight: 20
     - identifier: instagram
       name: Instagram
       url: 'https://instagram.com/eartharoid'
-      params:
-        icon: 'fab fa-instagram'
+      # params:
+      #   icon: 'fab fa-instagram'
+      pre: 'fab fa-instagram'
       weight: 30
     - identifier: twitter
       name: Twitter
       url: 'https://twitter.com/eartharoid'
-      params:
-        icon: 'fab fa-twitter'
+      # params:
+      #   icon: 'fab fa-twitter'
+      pre: 'fab fa-twitter'
       weight: 40
     - identifier: kofi
       name: Ko-fi
       url: 'https://ko-fi.com/eartharoid'
-      params:
-        icon: 'fas fa-coffee'
+      # params:
+      #   icon: 'fas fa-coffee'
+      pre: 'fas fa-coffee'
       weight: 50
 # outputs:
 #   home:
