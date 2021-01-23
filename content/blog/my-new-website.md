@@ -9,6 +9,8 @@ tags:
   - 'websites'
 ---
 
+{{< carousel "https://ik.imagekit.io/eartharoid/christmas-countdown/bg/default.jpg?tr=w-1920,h-1280,c-force" "https://ik.imagekit.io/eartharoid/projects/discord-tickets/banner-v2-gradient-compressed-darker.png" >}}
+
 ## fdgs
 
 **Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Nam suscipit mattis ante et semper. [Morbi aliquam sapien](#main) nec pharetra ullamcorper. Nulla ut ante eget enim posuere pellentesque sed sed tellus. Aenean sed tortor vel dolor egestas dapibus et ac nisi. Etiam mattis, lectus at imperdiet molestie, felis magna egestas libero, eget rutrum magna erat non justo. Quisque placerat tempor risus. Duis porta gravida tortor eu fermentum. Integer gravida nunc ut erat tempor pulvinar. Vestibulum molestie mauris at justo lacinia lobortis. Phasellus eu laoreet ligula. Vestibulum fermentum ligula et leo aliquet blandit. Aenean eu risus dapibus, aliquam risus id, congue nunc.

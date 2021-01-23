@@ -27,10 +27,10 @@
 						</div>
 						{{ end }}
 					</div>
+					{{ with .Param "links" }}
 					<hr>
 					<div id='links'>
 						<h6>Links</h6>
-						{{ with .Param "links" }}
 						{{ range . }}
 						<div class='field is-grouped'>
 							<a href='{{ .url }}' target='_blank' class='control'>
@@ -44,8 +44,19 @@
 							</a>
 						</div>
 						{{ end }}
-						{{ end }}
 					</div>
+					{{ end }}
+					{{ with .Param "skills" }}
+					<hr>
+					<div id='skills'>
+						<h6>Skills used</h6>
+						<ul>
+							{{ range . }}
+							<li>{{ . }}</li>
+							{{ end }}
+						</ul>
+					</div>
+					{{ end }}
 					<!-- {{/* if and (gt .WordCount 400 ) (.Params.toc) */}} -->
 					<hr>
 					<div id='toc'>

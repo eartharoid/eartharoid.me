@@ -2,8 +2,53 @@
 <main>
 	{{- partial "fullheight-hero.html" . -}}
 	<section id='main' class='section'>
-		<container id='content' class='content container is-fluid'>
-			{{ .Content }}
+		<container class='content container is-fluid'>
+			<div class='columns'>
+				<div class='column'>
+					<div id='content'>
+						{{ .Content }}
+					</div>
+				</div>
+				<div class='column is-one-quarter'>
+					<div id='toc' class='box'>
+						<h6>On this page</h6>
+						<p>{{ .TableOfContents }}</p>
+					</div>
+					{{ with .Site.GetPage "section" "blog" }}
+					<div id='recent-posts' class='box'>
+						<h6>Recent posts</h6>
+						{{ with .Pages }}
+						{{ range first 1 . }}
+						<div class='block'>
+							<p class='title is-size-4'>
+								<a href='{{ .Permalink }}'>{{ .Title }}</a>
+							</p>
+							<p class='subtitle is-size-6'>
+								{{- partial "date.html" . -}}
+							</p>
+						</div>
+						<div class='block'>
+							<p>
+								{{ (truncate 128 "..." .Summary) | safeHTML }}
+								<!-- {{ .Summary | safeHTML }} -->
+							</p>
+						</div>
+						<div class='block'>
+							<a href='{{ .Permalink }}'>
+								<button class='button is-info'>
+									<span>Read more</span>
+									<span class='icon'>
+										<i class='fas fa-chevron-right'></i>
+									</span>
+								</button>
+							</a>
+						</div>
+						{{ end }}
+						{{ end }}
+					</div>
+					{{ end }}
+				</div>
+			</div>
 		</container>
 	</section>
 </main>

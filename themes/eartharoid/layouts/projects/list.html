@@ -2,13 +2,15 @@
 <main>
 	{{- partial "hero.html" . -}}
 	<section id='main' class='section'>
-		<container id='content' class='content container is-fluid'>
-			{{ .Content }}
+		<container id='content' class='container is-fluid'>
+			<div class='content has-text-centered mb-6'>
+				{{ .Content }}
+			</div>
 		</container>
 		<container class='container is-fluid'>
 			<div class='columns'>
 				{{ range .Pages }}
-				<div class='column is-one-third-desktop'>
+				<div class='column is-one-third'>
 					<div class='card'>
 						<!-- <div class='card-header'>
 							{{ with .Params.tags }}
@@ -59,7 +61,7 @@
 						</div>
 						{{with .Param "links" }}
 						<div class='card-footer'>
-							{{ range . }}
+							{{ range first 2 . }}
 							<a href='{{ .url }}' class='card-footer-item' target='_blank'>
 								<button class='button'>
 									<span class='icon'>

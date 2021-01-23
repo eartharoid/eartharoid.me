@@ -93,6 +93,18 @@
 						{{ end }}
 						{{ end }}
 					</div>
+					{{ with .Site.Taxonomies.tags }}
+					<div class='content box'>
+						<h6>Tags</h6>
+						<p>
+							<div class='tags'>
+								{{ range . }}
+								<a href='{{ .Page.RelPermalink }}' class='tag is-primary'>{{ .Page.Title }}</a>
+								{{ end }}
+							</div>
+						</p>
+					</div>
+					{{ end }}
 				</div>
 			</div>
 		</container>

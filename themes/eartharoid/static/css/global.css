@@ -9,3 +9,144 @@ html {
 	it's always dark grey. it doesn't look bad, but transparent looks better. */
 	background-color: rgba(0, 0, 0, 0) !important;
 }
+
+.embla {
+  position: relative;
+  padding: 20px;
+  max-width: 670px;
+  /* min-height: 380px; */
+  min-height: 285px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.embla__slide {
+  padding-left: 10px;
+  position: relative;
+  min-height: 100%;
+  min-width: 60%;
+  width: auto;
+}
+
+/* .embla__slide:nth-child(1) {
+  min-width: 60%;
+}
+
+.embla__slide:nth-child(2) {
+  min-width: 40%;
+}
+
+.embla__slide:nth-child(3) {
+  min-width: 70%;
+}
+
+.embla__slide:nth-child(4) {
+  min-width: 30%;
+}
+
+.embla__slide:nth-child(5) {
+  min-width: 90%;
+}
+
+.embla__slide:nth-child(6) {
+  min-width: 25%;
+}
+
+.embla__slide:nth-child(7) {
+  min-width: 50%;
+}
+
+.embla__slide:nth-child(8) {
+  min-width: 80%;
+}
+
+.embla__slide:nth-child(9) {
+  min-width: 46%;
+}
+
+.embla__slide:nth-child(9) {
+  min-width: 65%;
+} */
+
+.embla__slide__inner {
+  position: relative;
+  overflow: hidden;
+  /* height: 190px; */
+  /* height: 380px; */
+  height: 285px;
+}
+
+.embla__slide__img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  max-height: 285px;
+  /* max-width: 670px; */
+  width: auto;
+  height: auto;
+  /* min-height: 100%; */
+  /* min-width: 100%; */
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute !important;
+  z-index: 1;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: #1bcacd;
+  padding: 0;
+}
+
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+}
+
+.embla__button--prev {
+  left: 27px;
+}
+
+.embla__button--next {
+  right: 27px;
+}
+

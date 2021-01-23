@@ -1,9 +1,16 @@
+<section class='section has-text-centered'>
+	{{ with .GitInfo }}
+	<p class='block'>
+		Last Modified: <a href='{{ $.Site.Params.github }}/commit/{{ .Hash }}' target='_blank'>{{ partial "lastmod.html" $.Page }}</a>
+	</p>
+	{{ end }}
+</section>
 <footer class='footer mb-0 pb-6'>
 	<div class='has-text-centered'>
 		<p class='block'>
 			{{ with .Site.Menus.socialicons }}
 			{{ range . }}
-			<a href='{{ .URL }}' title='{{ .Name }}' target='_blank'>
+			<a href='{{ .URL }}' title='{{ .Name }}' rel='noreferrer' target='_blank'>
 				<span class='icon is-large'>
 					<i class='fa-lg {{ with .Params.icon }}{{- . -}}{{ end }}'></i>
 				</span>
@@ -22,9 +29,9 @@
 		<p class='block mt-4'>
 			<a href='https://bulma.io'>
 				<noscript>
-					<img src='{{ "images/bulma-white.png" | absURL }}' alt='Made with Bulma' width='128' height='24'
+					<img src='{{ "images/bulma-white.png" | relURL }}' alt='Made with Bulma' width='128' height='24'
 						media='(prefers-color-scheme: dark)'>
-					<img src='{{ "images/bulma-black.png" | absURL }}' alt='Made with Bulma' width='128' height='24'
+					<img src='{{ "images/bulma-black.png" | relURL }}' alt='Made with Bulma' width='128' height='24'
 						media='(prefers-color-scheme: no-preference), (prefers-color-scheme: light)'>
 				</noscript>
 				<img alt='Made with Bulma' width='128' height='24' id='madeWithBulma'>

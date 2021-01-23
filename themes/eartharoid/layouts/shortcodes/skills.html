@@ -1,0 +1,12 @@
+{{ with $.Page.Params.skills }}
+<div class='level'>
+	{{ range . }}
+	<div class='level-item has-text-centered'>
+    <div>
+      <p class='heading'>{{ .skill }}</p>
+      <p class='title'>{{ .level }}%</p>
+    </div>
+  </div>
+	{{ end }}
+</div>
+{{ end }}
