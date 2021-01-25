@@ -9,7 +9,7 @@ tags:
   - 'websites'
 ---
 
-{{< carousel "https://ik.imagekit.io/eartharoid/christmas-countdown/bg/default.jpg?tr=w-1920,h-1280,c-force" "https://ik.imagekit.io/eartharoid/projects/discord-tickets/banner-v2-gradient-compressed-darker.png" >}}
+<!--{{< carousel "https://ik.imagekit.io/eartharoid/christmas-countdown/bg/default.jpg?tr=w-1920,h-1280,c-force" "https://ik.imagekit.io/eartharoid/projects/discord-tickets/banner-v2-gradient-compressed-darker.png" >}}-->
 
 ## fdgs
 
