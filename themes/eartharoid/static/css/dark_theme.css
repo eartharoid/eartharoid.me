@@ -12,7 +12,7 @@ input[type='email'],
 input[type='text']:placeholder-shown,
 input[type='password'],
 input[type='password']:placeholder-shown {
-	background-color: black !important;
+	background-color: #1F2424 !important;
 	color: white !important;
 }
 
