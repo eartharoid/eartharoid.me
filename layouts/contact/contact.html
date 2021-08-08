@@ -1,0 +1,48 @@
+{{ define "main" }}
+<main>
+	{{- partial "hero.html" . -}}
+	<section id='main' class='section'>
+		<container id='content' class='content container is-fluid has-text-centered'>
+			{{ .Content }}
+		</container>
+		<container class='container box has-text-centered mt-3' style='max-width:500px;'>
+			<form action='https://formspree.io/f/mgernbad' method='POST'>
+
+				<div class='field'>
+					<label class='label'>Name</label>
+					<div class='control'>
+						<input class='input' name='_name' type='text' placeholder='John Smith' required>
+					</div>
+				</div>
+
+				<div class='field'>
+					<label class='label'>Email</label>
+					<input class='input' name='_replyto' type='email' placeholder='john.smith@example.com' required>
+				</div>
+
+				<div class='field'>
+					<label class='label'>Subject</label>
+					<div class='control'>
+						<input class='input' name='_subject' type='text' placeholder='Hello' required>
+					</div>
+				</div>
+
+				<div class='field'>
+					<label class='label'>Message</label>
+					<div class='control'>
+						<textarea class='input' name='_message' type='text' placeholder='What do you want to talk about?'
+							style='height:8em;resize:vertical;' required></textarea>
+					</div>
+				</div>
+
+				<div class='field'>
+					<div class='control'>
+						<button class='button is-link is-fullwidth' type='submit'>Send</button>
+					</div>
+				</div>
+
+			</form>
+		</container>
+	</section>
+</main>
+{{ end }}
