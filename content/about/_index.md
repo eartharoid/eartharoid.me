@@ -1,5 +1,5 @@
 ---
 title: About me
-layout: page
+layout: about
 description: Learn more about me
 ---
