@@ -20,11 +20,15 @@ skills:
 
 ## About me
 
-Hi. I'm Isaac, a 17 year-old student & developer from England. I write code, think about code, procrastinate *(a lot)*, and occasionally do photography.
+Hi. I'm Isaac, a 17 year-old student & developer from England. I write code, think about code, procrastinate *(a lot)*, and occasionally do photography. I like making things, both physically and digitally. I find science interesting, *but also sometimes incredibly boring*.
+
+I started messing with code a little in 2016, starting with very basic Node.JS and some basic HTML & CSS only web pages. I have been writing more code every year since, as my GitHub profile shows.
+
+I first tried photography in 2017 and I have been doing a little bit each year, mostly on holidays or day trips to interesting places.
 
 {{< html >}}
 <a href='/about'>
-  <button class='button is-info is-outlined'>
+  <button class='button is-info is-outlined mt-2'>
     <span>Learn more about me</span>
     <span class='icon'>
       <i class='fas fa-chevron-right'></i>
@@ -33,13 +37,26 @@ Hi. I'm Isaac, a 17 year-old student & developer from England. I write code, thi
 </a>
 {{< /html >}}
 
+{{< html >}}
+<div class="card mt-6 mb-6">
+	<div class="card-content">
+		<p class="title">eartharoid</p>
+		<p>
+			I'm also known as "eartharoid" an "earth". I created the name "eartharoid" in early 2016 whilst
+			thinking of a username for my Steam account. I like space stuff, Earth is my favourite planet, and I
+			smashed an incorrectly spelling of asteroid on the end.
+		</p>
+	</div>
+</div>
+{{< /html >}}
+
 ## Portfolio
 
 I have worked on many projects. For my personal projects, click the button below. My other work is listed below.
 
 {{< html >}}
 <a href='/projects'>
-  <button class='button is-info is-outlined'>
+  <button class='button is-info is-outlined mt-2'>
     <span>View my personal projects</span>
     <span class='icon'>
       <i class='fas fa-chevron-right'></i>
