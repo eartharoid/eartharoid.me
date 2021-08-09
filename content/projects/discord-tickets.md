@@ -8,7 +8,7 @@ hero: 'https://ik.imagekit.io/eartharoid/discord-tickets/banners/blurple-no-text
 images:
   - 'https://i.imgur.com/xkH4K4d.png'
   - 'https://i.imgur.com/ukvcbrS.png'
-  - 'https://ik.imagekit.io/eartharoid/discord-tickets/banners/dark_7kQSnZUNCBQ.png?updatedAt=1621546535269'
+  - 'https://i.imgur.com/cJtMHUq.png'
 categories:
   - 'personal'
 tags:
