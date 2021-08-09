@@ -42,9 +42,9 @@ I first tried photography in 2017 and I have been doing a little bit each year, 
 	<div class="card-content">
 		<p class="title">eartharoid</p>
 		<p>
-			I'm also known as "eartharoid" an "earth". I created the name "eartharoid" in early 2016 whilst
+			I'm also known as "eartharoid" and "earth". I created the name "eartharoid" in early 2016 whilst
 			thinking of a username for my Steam account. I like space stuff, Earth is my favourite planet, and I
-			smashed an incorrectly spelling of asteroid on the end.
+			smashed an incorrect spelling of asteroid on the end.
 		</p>
 	</div>
 </div>
