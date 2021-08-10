@@ -24,6 +24,7 @@ links:
     url: 'https://discord.gg/zv8C9F8'
 skills:
   - 'React'
+  - 'SCSS'
 ---
 
 ## Screenshots
@@ -45,37 +46,16 @@ Mue is a fast, open and free-to-use browser extension that gives a new, fresh an
 * Navbar with copy button, favourite background, notes feature etc
 * [Marketplace](https://github.com/mue/marketplace) - download custom photo packs, quote packs and preset settings made by the community
 
-#### Planned Features
-
-Please see our [roadmap](https://github.com/mue/mue/projects)
-
 ### Installation
 
 *A demo of the tab can be found [here](https://demo.muetab.com), and the latest GitHub commit build [here](https://mue.vercel.app)*
 
-#### Chrome
+[![Install on Chrome](https://i.imgur.com/11mV0bd.png)](https://chrome.google.com/webstore/detail/mue/bngmbednanpcfochchhgbkookpiaiaid)
+[![Install on Firefox](https://raw.githubusercontent.com/mue/mue/main/assets/firefox.png)](https://addons.mozilla.org/firefox/addon/mue)
 
-[![Chrome Web Store Logo](assets/chrome.png)](https://chrome.google.com/webstore/detail/mue/bngmbednanpcfochchhgbkookpiaiaid)
+## My role
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/mue/bngmbednanpcfochchhgbkookpiaiaid)
-
-#### Firefox
-
-[![Firefox Add-ons Logo](assets/firefox.png)](https://addons.mozilla.org/firefox/addon/mue)
-
-[Firefox Add-ons](https://addons.mozilla.org/firefox/addon/mue)
-
-#### Edge (Chromium)
-
-[Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/aepnglgjfokepefimhbnibfjekidhmja)
-
-#### Whale
-
-[Whale Store](https://store.whale.naver.com/detail/ecllekeilcmicbfkkiknfdddbogibbnc)
-
-#### Other
-
-[GitHub Releases](https://github.com/mue/mue/releases)
+Although I occasionally help with development, my primary role is Quality Assurance. I was also one of the first to submit photos to Mue's own background image collection, however most of them were terrible and were later removed as Mue attracted more users.
 
 ## Support
 
