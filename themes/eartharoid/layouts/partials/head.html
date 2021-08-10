@@ -9,38 +9,45 @@
 	<meta name='theme-color' content='{{ .Site.Params.primaryColour }}'>
 	{{- end -}}
 
+	<meta property='og:type' content='website'>
+	<meta property='og:site_name' content='{{ .Site.Title }}'>
+	<meta property='og:title' content='{{ .Title }} • {{ .Site.Title }}'>
+	<meta property='og:url' content='{{ .Permalink }}'>
+	
+
+	{{ if (isset .Params "hero") }}
+	<meta property='og:image' content='{{ .Params.hero }}'>
+	<meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:image' content='{{ .Params.hero }}'>
+	{{ else }}
+	<meta property='og:image' content='{{ .Site.Params.logo }}'>
+	<meta name='twitter:image' content='{{ .Site.Params.logo }}'>
+	{{ end }}
+
+	{{- with .Site.Params.twitter -}}
+		<meta name='twitter:site' content='@{{ . }}'>
+		<meta name='twitter:creator' content='@{{ . }}'>
+	{{- end -}}
+	<meta name='twitter:title' content='{{ .Title }} • {{ .Site.Title }}'>
+
 	{{- if .IsHome -}}
-	<!-- <meta name='description' content='{{ with .Site.GetPage "/_index.md" }}{{ .Summary }}{{ end }}'> -->
-	<meta name='description' content='{{ .Summary }}'>
-
-	{{ if .Site.Params.keywords }}
-	<meta name='keywords' content='{{ .Site.Params.keywords }}'>
-	{{ end }}
-
+		<meta name='description' content='{{ .Site.Params.description }}'>
+		<meta name='twitter:description' content='{{ .Site.Params.description }}'>
+		<meta name='og:description' content='{{ .Site.Params.description }}'>
+		{{ with .Site.Params.keywords }}
+		<meta name='keywords' content='{{ . }}'>
+		{{ end }}
 	{{- else -}}
-
-	<!-- <meta name='description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}'> -->
-	<meta name='description'
-		content='{{ if .Description }}{{ .Description }}{{ else }}{{ with .Site.GetPage "/_index.md" }}{{ .Summary }}{{ end }}{{ end }}'>
-	<meta name='keywords' content='{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}'>
-
-	{{ with .Params.date }}
-	<meta property='article:published_time' content='{{ .Format "2004-02-06T23:55:00+00:00" }}'>
-	{{ end }}
-
-	{{ with .Params.lastmod }}
-	<meta property='article:modified_time' content='{{ .Format "2004-02-06T23:55:00+00:00" }}'>
-	{{ end }}
-
-
+		<meta name='description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
+		<meta name='twitter:description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
+		<meta name='og:description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
+		<meta name='keywords' content='{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}'>
 	{{- end -}}
 
-	{{ if .Site.Params.author -}}
-	<meta name='author' content='{{ .Params.author }}'>
+	{{ with .Site.Params.author -}}
+	<meta name='author' content='{{ . }}'>
 	{{- end }}
 
-	{{ template "_internal/opengraph.html" . }}
-	{{ template "_internal/twitter_cards.html" . }}
 	{{ hugo.Generator }}
 
 	<title>{{ .Title }} • {{ .Site.Title }}</title>
