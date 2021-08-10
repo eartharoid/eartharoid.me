@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600');
+:root {
+  --space-color: #0f2437;
+  --earth-water-color: #2276bc;
+  --earth-land-color: #65c547;
+  --earth-cloud-color: #FFF;
+  --earth-rotation: 20000ms;
+  --cloud-rotation: 30000ms;
+  
+  --moon-color: #e6e8d2;
+}
+
+body {
+  background-color: var(--space-color);
+  background-image: url('https://ik.imagekit.io/eartharoid/images/nebulaBlue.jpg?updatedAt=1610665475461'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-shadow: 2px 3px 5px black;
+  
+  /*overflow: hidden;*/
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+
+.e {
+	margin-top: 65px;
+	font-size: 220px;
+	font-weight: 600;
+	display: inline;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+.eleft {
+	float: left;
+	margin-right: 70px;
+}
+.eright {
+	float: right;
+	margin-left: 70px;
+	
+}
+
+.container {
+}
+
+#errLocation {
+	color: #009999;
+  text-shadow: 2px 1px black;
+}
+
+#content {
+    padding-top: 5px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+::-moz-selection {
+  color: white;
+  background: #009999;
+}
+
+::selection {
+  color: white;
+  background: #009999;
+}
+
+
+/*::-moz-selection {
+  color: #009999;
+  background: white;
+}
+
+::selection {
+  color: #009999;
+  background: white;
+}*/
+
+/*
+===========================================================
+Animation by https://codepen.io/snazsh/
+===========================================================
+*/
+
+
+
+
+.canvas {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 0%;
+  padding-top: 0px;
+  width: 600px;
+  height: 420px;
+/*   border: 5px dashed #EFF8FF;
+  border-radius: 5px; */
+  background: none;
+}
+
+.stars {
+  height: 500px;
+  width: 100%;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+/* Earth */
+
+.earth {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--earth-water-color);
+  top: 110px;
+  left: 200px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: rotate(15deg);
+  z-index: 10;
+  box-shadow: 1px 3px 8px black;
+}
+
+
+.earth:after {
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: inset -50px -25px rgba(0,0,0,0.2);
+}
+
+ .shine {
+   position: absolute;
+   background-color: transparent;
+   width: 100px;
+   height: 100px;
+   border: 20px solid #FFF;
+   border-radius: 50%;
+   border-top: solid 20px transparent;
+   border-right: solid 20px transparent;
+   border-bottom: solid 20px transparent; 
+   transform: rotate(45deg);
+   opacity: .3;
+   left: 215px;
+   top: 130px;
+   z-index: 12;
+}
+
+.shine::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 22px -3px 0px #FFF, 21px 82px 0px #FFF;
+  left: -24px;
+}
+
+.land {
+  position: absolute;
+  background-color: var(--earth-land-color);
+  border-radius: 20px;
+}
+
+.land-big {
+  position: absolute;
+  background-color: var(--earth-land-color);
+  border-radius: 16px;
+}
+
+.land-join {
+  position: absolute;
+  background-color: var(--earth-land-color);
+  height: 10px;
+  width: 30px;
+}
+
+.cloud {
+  position: absolute;
+  background-color: var(--earth-cloud-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+
+.land-join::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: var(--earth-water-color);
+  box-shadow: 30px 0px 0px var(--earth-water-color);
+}
+
+/* Animate the land */
+
+@keyframes earth-rotation-a-start {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(250px);
+  }
+}
+
+@keyframes earth-rotation-a-loop {
+  0% {
+    transform: translate(-200px);
+  }
+  
+  100% {
+    transform: translate(250px);
+  }
+}
+
+@keyframes earth-rotation-ce-start {
+  0% {
+    transform: translate(0px);
+  }
+ 
+  100% {
+    transform: translate(150px);
+  }
+}
+
+@keyframes earth-rotation-ce-loop {
+  0% {
+    transform: translate(-350px);
+  }
+ 
+  100% {
+    transform: translate(100px);
+  }
+}
+
+/* Animate the cloud */
+
+@keyframes earth-rotation-cla-start {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(250px);
+  }
+}
+
+@keyframes earth-rotation-cla-loop {
+  0% {
+    transform: translate(-150px);
+  }
+  
+  100% {
+    transform: translate(250px);
+  }
+}
+
+@keyframes earth-rotation-cle-start {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(100px);
+  }
+}
+
+@keyframes earth-rotation-cle-loop {
+  0% {
+    transform: translate(-200px);
+  }
+  
+  100% {
+    transform: translate(150px);
+  }
+}
+
+/*  Big land NA */
+
+.land-big.na {
+  top: 30px;
+  left: -30px;
+  animation-name: earth-rotation-a-start, earth-rotation-a-loop;
+  animation-duration: 13000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 13000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land-big.na > .land-join {
+  top: 25px;
+  left: 37px;
+}
+
+.na > .l-1 {
+  left: -30px;
+  height: 25px;
+  width: 130px;
+}
+
+.na > .l-2 {
+  top: 35px;
+  height: 35px;
+  width: 80px;
+}
+
+/* Big land SA */
+
+.land-big.sa {
+  top: 120px;
+  animation-name: earth-rotation-a-start, earth-rotation-a-loop;
+  animation-duration: 13000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 13000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land-big.sa > .land-join {
+  top: 25px;
+  left: 20px;
+}
+
+.sa > .l-1 {
+  height: 25px;
+  width: 80px;
+}
+
+.sa > .l-2 {
+  top: 35px;
+  height: 20px;
+  width: 110px;
+}
+
+/* Big land A */
+
+.land-big.a {
+  top: 100px;
+  left: 109px;
+animation-name: earth-rotation-ce-start, earth-rotation-ce-loop;
+  animation-duration: 8000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 5200ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land-big.a > .land-join {
+  top: 35px;
+  left: 45px;
+}
+
+.a > .l-1 {
+  height: 35px;
+  width: 90px;
+}
+
+.a > .l-2 {
+  top: 45px;
+  left: 35px;
+  height: 20px;
+  width: 50px;
+}
+
+/* Big land CE */
+
+.land-big.ce {
+  top: 50px;
+  left: 100px;
+  animation-name: earth-rotation-ce-start, earth-rotation-ce-loop;
+  animation-duration: 8000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 5200ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land-big.ce > .land-join {
+  top: 40px;
+  left: 135px;
+}
+
+.land-big.ce > .land-join.j-2 {
+  top: -10px;
+  left: 105px;
+}
+
+.ce > .l-1 {
+  height: 40px;
+  width: 185px;
+}
+
+.ce > .l-2 {
+  top: 50px;
+  left: 120px;
+  height: 30px;
+  width: 90px;
+}
+
+.ce > .l-3 {
+  top: -30px;
+  left: 90px;
+  height: 20px;
+  width: 80px;
+}
+
+/* Set of smaller lands */
+
+.land.ne {
+  top: 25px;
+  left: 95px;
+  height: 15px;
+  width: 40px;
+  animation-name: earth-rotation-ce-start, earth-rotation-ce-loop;
+  animation-duration: 8000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 5200ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land.au {
+  top: 140px;
+  left: 270px;
+  height: 30px;
+  width: 60px;
+  animation-name: earth-rotation-ce-start, earth-rotation-ce-loop;
+  animation-duration: 8000ms, var(--earth-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 5200ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.land.np{
+  background-color: #d0e2ee;
+  height: 15px;
+  width: 80px;
+  top: -3px;
+  left: 60px;
+}
+
+.land.sp{
+  background-color: #d0e2ee;
+  height: 15px;
+  width: 100px;
+  top: 190px;
+  left: 50px;
+}
+
+/* Set of cloud */
+
+.cloud.c1, .cloud.c2, .cloud.c3, .cloud.c4  {
+  height: 13px;
+  width: 30px;
+}
+
+.cloud.c5, .cloud.c6 {
+  height: 22px;
+  width: 63px;
+}
+
+.cloud.c7, .cloud.c8  {
+  height: 22px;
+  width: 63px;
+}
+
+.cloud.c1 {
+  top: 35px;
+}
+
+.cloud.c2 {
+  top: 85px;
+  left: -50px;
+}
+
+.cloud.c3 {
+  top: 100px;
+  left: 120px;
+}
+
+.cloud.c4 {
+  top: 150px;
+  left: 160px;
+}
+
+.cloud.c5 {
+  top: 45px;
+  left: 10px;
+}
+
+.cloud.c6 {
+  top: 115px;
+  left: -30px;
+}
+
+.cloud.c7 {
+  top: 30px;
+  left: 120px;
+}
+
+.cloud.c8 {
+  top: 160px;
+  left: 160px;
+}
+
+.cloud.c1, .cloud.c2 {
+  animation-name: earth-rotation-cla-start, earth-rotation-cla-loop;
+  animation-duration: 28000ms, var(--cloud-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 28000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.cloud.c3, .cloud.c4 {
+  animation-name: earth-rotation-cle-start, earth-rotation-cle-loop;
+  animation-duration: 10000ms, var(--cloud-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 10000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.cloud.c5, .cloud.c6 {
+  animation-name: earth-rotation-cla-start, earth-rotation-cla-loop;
+  animation-duration: 20000ms, var(--cloud-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 20000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+.cloud.c7, .cloud.c8 {
+  animation-name: earth-rotation-cle-start, earth-rotation-cle-loop;
+  animation-duration: 10000ms, var(--cloud-rotation);
+  animation-timing-function: linear;
+  animation-delay: 0s, 10000ms;
+  animation-iteration-count: 1, infinite;
+}
+
+/* Moon */
+
+.moon {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: var(--moon-color);
+  transform: scaleX(0.33) translateZ(0);
+}
+
+.moon:after {
+  content: '';
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  box-shadow: inset -10px -5px rgba(0,0,0,0.2);
+}
+
+.crater {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #d6d8b9;
+  box-shadow: inset 2px 1px rgba(0,0,0,0.2), 1px 0px rgba(196,207,207);
+}
+
+/*  Set of Craters */
+
+.crater.c1 {
+  top: 20px;
+  left: 13px;
+  height: 15px;
+  width: 15px;
+}
+
+.crater.c2 {
+  top: 40px;
+  left: 40px;
+  height: 20px;
+  width: 20px;
+}
+
+.crater.c3 {
+  top: 15px;
+  left: 40px;
+  height: 10px;
+  width: 10px;
+}
+
+.crater.c4 {
+  top: 45px;
+  left: 20px;
+  height: 8px;
+  width: 8px;
+}
+
+.ellipsis  {
+  width: 150px;
+  height: 150px;
+  transform: scaleX(3);
+  top: 110px;
+  left: 210px;
+  position: absolute;
+  animation: moon-depth 25s infinite linear;
+}
+
+.rotate-moon {
+  width: 100%;
+  height: 100%;
+  animation: rotation 25s infinite linear;    
+  transform-origin: 50% 50%;
+}
+
+.counter-rotate-moon {
+  width: 50px;
+  height: 50px;
+  animation: counter-rotation 25s infinite linear;    
+}
+
+@keyframes moon-depth {
+  0% {
+    z-index: 9;
+  }
+  80%{
+    z-index: 11;
+  }
+  100%{
+    z-index: 9;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes counter-rotation {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+
+
+/*
+#####################################################################################################################################
+#####################################################################################################################################
+#####################################################################################################################################
+*/
+
+
+
+
+/* astronout */
+@-moz-keyframes move-astronaut {
+    100% { -moz-transform: translate(-160px, -160px);}
+}
+@-webkit-keyframes move-astronaut {
+    100% { -webkit-transform: translate(-160px, -160px);}
+}
+@keyframes move-astronaut{
+    100% { -webkit-transform: translate(-160px, -160px); transform:translate(-160px, -160px); }
+}
+@-moz-keyframes rotate-astronaut {
+    100% { -moz-transform: rotate(-720deg);}
+}
+@-webkit-keyframes rotate-astronaut {
+    100% { -webkit-transform: rotate(-720deg);}
+}
+@keyframes rotate-astronaut{
+    100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); }
+}
+.object_astronaut{
+    animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut{
+    z-index: 110 !important;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    will-change: transform;
+    animation: move-astronaut 50s infinite linear both alternate;
+}
+
+
+
+@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
+@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
+@keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }
+
+
+@-moz-keyframes glow-star {
+    40% { -moz-opacity: 0.3;}
+    90%,100% { -moz-opacity: 1; -moz-transform: scale(1.2);}
+}
+@-webkit-keyframes glow-star {
+    40% { -webkit-opacity: 0.3;}
+    90%,100% { -webkit-opacity: 1; -webkit-transform: scale(1.2);}
+}
+@keyframes glow-star{
+    40% { -webkit-opacity: 0.3; opacity: 0.3;  }
+    90%,100% { -webkit-opacity: 1; opacity: 1; -webkit-transform: scale(1.2); transform: scale(1.2); border-radius: 999999px;}
+}
+
+
+
+
+.custom-navbar{
+    /*padding-top: 15px;*/
+    padding-top: 10px;
+}
+
+.brand-logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.navbar-links{
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    text-transform: uppercase;
+    
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+/*    overflow: hidden;*/
+    display: flex; 
+    align-items: center; 
+}
+
+li {
+    float: left;
+    padding: 0px 15px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 12px;
+    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+li a:hover {
+    color: #009999;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .navbar-links{
+        display: none;
+    }
+    
+    .custom-navbar{
+        text-align: center;
+    }
+    
+    .brand-logo img{
+        width: 120px;
+    }
+    
+    .box_astronaut{
+        top: 70%;
+    }
+    
+    .central-body{
+        padding-top: 25%;
+    }
+}
+
+
+
+
+.btn {
+    position: relative;
+    z-index: 200;
+    margin: 15px auto;
+    width: 100px;
+    padding: 10px 15px;
+    border: 0px solid #009999;
+    border-radius: 100px;
+    font-weight: 400;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 14px;
+  	text-transform: uppercase;
+	box-shadow: 2px 2px 10px black;
+    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: #009999;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 2px 5px 20px black;
+	  cursor: pointer;
+}
