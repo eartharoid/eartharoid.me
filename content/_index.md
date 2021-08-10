@@ -75,6 +75,7 @@ It appears that it is popular to have a list of icons/logos for "skills", so her
 {{< devicon github-plain fa-2x is-large >}}
 {{< devicon git-plain fa-2x is-large >}}
 {{< icon fab fa-gitkraken fa-2x is-large >}}
+{{< icon fab fa-markdown fa-2x is-large >}}
 {{< devicon atom-original fa-2x is-large >}}
 {{< devicon vscode-plain fa-2x is-large >}}
 {{< devicon nodejs-plain fa-2x is-large >}}
