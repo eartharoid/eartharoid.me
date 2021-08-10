@@ -2,7 +2,8 @@
 title: Left4Craft
 date: 2021-01-19T11:36:34Z
 draft: false
-description: 'A small community Minecraft server with survival, creative, and more. '
+description: 'A small community Minecraft server with survival, creative, and more.'
+weight: 10
 logo: 'https://www.left4craft.org/assets/logo/main/566.png'
 hero: 'https://www.left4craft.org/assets/img/mc-bg1.jpg'
 images:
@@ -38,7 +39,7 @@ skills:
 
 Left4Craft is a Minecraft server which started in 2013 (I think). I joined in March 2016, and became a Helper in April 2017. About a year later I had risen to Admin and have helped to improve and maintain the server since.
 
-### What I have done
+## What I have done
 
 I have helped a bit with the plugins, but I have done much more for the Discord bot and the website.
 

@@ -4,6 +4,7 @@ date: 2021-01-19T11:36:34Z
 draft: false
 description: 'An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.'
 logo: 'https://ik.imagekit.io/eartharoid/discord-tickets/icons/white-logo-blurple-background_UMpG-za7Tu.png?updatedAt=1621546599614'
+weight: 30
 hero: 'https://ik.imagekit.io/eartharoid/discord-tickets/banners/blurple-no-text_NTwAIQz35.png?updatedAt=1621546535257'
 images:
   - 'https://i.imgur.com/xkH4K4d.png'

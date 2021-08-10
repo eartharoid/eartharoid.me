@@ -14,7 +14,6 @@ tags:
     - ''
 links:
   - name: 'GitHub'
-    color: '#24292E'
     icon: 'fab fa-github'
     url: 'https://github.com/'
 skills:

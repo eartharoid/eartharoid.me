@@ -3,7 +3,7 @@ title: Christmas Countdown
 date: 2021-01-17T21:31:46.000Z
 draft: false
 description: 'A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.'
-weight: 10
+weight: 20
 # logo: 'https://christmascountdown.live/img/logo/red/santa-outline.png'
 logo: 'https://ik.imagekit.io/eartharoid/christmas-countdown/logo/santa-outline.png'
 # hero: 'https://christmascountdown.live/img/bg/default.jpg'
