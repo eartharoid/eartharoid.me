@@ -91,17 +91,22 @@ menu:
 outputs:
   home:
   - HTML
+  - Sitemap
   page:
   - HTML
+  - Sitemap
   # - JSON
   section:
   - HTML
+  - Sitemap
   # - JSON
   taxonomy:
   - HTML
+  - Sitemap
   # - JSON
   term:
   - HTML
+  - Sitemap
   # - JSON
 markup:
   renderer:
@@ -130,5 +135,5 @@ markup:
     # noClasses: true
     style: monokai
     tabWidth: 4
-taxonomies:
-  tag: tags
+# taxonomies:
+#   tag: tags
