@@ -79,8 +79,10 @@ It appears that it is popular to have a list of icons/logos for "skills", so her
 {{< icon fab fa-vuejs fa-2x is-large >}}
 {{< icon fab fa-html5 fa-2x is-large >}}
 {{< icon fab fa-css3 fa-2x is-large >}}
+{{< icon fab fa-windows fa-2x is-large >}}
 {{< icon fab fa-linux fa-2x is-large >}}
 {{< icon fab fa-ubuntu fa-2x is-large >}}
+{{< icon fab fa-java fa-2x is-large >}}
 
 Icons that are missing from FontAwesome:
 
@@ -89,7 +91,7 @@ Icons that are missing from FontAwesome:
 
 ##### Programming languages
 
-I've noticed that a lot of apparent portfolio sites have progress bars or numbers representing ability to use the language or tool. I think it's dumb but I made up some numbers anyway.
+A lot of portfolio sites have progress bars or numbers representing ability to use the language or tool. I think it's dumb but I made up some numbers anyway.
 
 {{< skills >}}
 
