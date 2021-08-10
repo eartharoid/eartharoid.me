@@ -12,7 +12,7 @@ params:
   navbarLogo: 'https://ik.imagekit.io/eartharoid/logo/profile-bg-removed-500.png?tr=w-400,h-100,cm-extract,x-50,y-200'
   # navbarLogo: 'https://ik.imagekit.io/eartharoid/logo/transparent/transparent-default-monochrome-white.png?tr=w-367,h-64,c-force'
   # primaryColour: '#00C4EE'
-  primaryColour: '#009999'
+  primaryColour: '#00C3EE'
   keywords: 'eartharoid, Isaac'
   github: 'https://github.com/eartharoid/eartharoid.me'
   footer: |
@@ -88,21 +88,21 @@ menu:
       params:
         icon: 'fas fa-coffee'
       weight: 50
-# outputs:
-#   home:
-#     - HTML
-#   section:
-#     - HTML
-#     - JSON
-#   page:
-#     - HTML
-#     - JSON
-#   taxonomy:
-#     - HTML
-#     - JSON
-#   term:
-#     - HTML
-#     - JSON
+outputs:
+  home:
+  - HTML
+  page:
+  - HTML
+  # - JSON
+  section:
+  - HTML
+  # - JSON
+  taxonomy:
+  - HTML
+  # - JSON
+  term:
+  - HTML
+  # - JSON
 markup:
   renderer:
     hardWraps: true
@@ -130,3 +130,5 @@ markup:
     # noClasses: true
     style: monokai
     tabWidth: 4
+taxonomies:
+  tag: tags

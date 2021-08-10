@@ -28,7 +28,7 @@ skills:
 ---
 
 ## Screenshots
-<!-- include images URLs as params, or it will take form page "images" param -->
+
 {{< carousel >}}
 
 ## About
