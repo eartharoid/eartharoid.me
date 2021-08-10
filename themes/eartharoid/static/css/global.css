@@ -155,3 +155,8 @@ html {
      -ms-flex-align: center;
         align-items: center;
 }
+
+.icon.is-large {
+	width: 4rem !important;
+	height: 4rem !important;
+}

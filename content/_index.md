@@ -71,23 +71,45 @@ I have worked on many projects. For my personal projects, click the button below
 
 It appears that it is popular to have a list of icons/logos for "skills", so here's mine:
 
-{{< icon fab fa-github fa-2x is-large >}}
-{{< icon fab fa-git fa-2x is-large >}}
-{{< icon fab fa-node fa-2x is-large >}}
-{{< icon fab fa-js fa-2x is-large >}}
-{{< icon fab fa-react fa-2x is-large >}}
-{{< icon fab fa-vuejs fa-2x is-large >}}
-{{< icon fab fa-html5 fa-2x is-large >}}
-{{< icon fab fa-css3 fa-2x is-large >}}
-{{< icon fab fa-windows fa-2x is-large >}}
-{{< icon fab fa-linux fa-2x is-large >}}
-{{< icon fab fa-ubuntu fa-2x is-large >}}
-{{< icon fab fa-java fa-2x is-large >}}
-
-Icons that are missing from FontAwesome:
-
-- Visual Studio Code
-- TypeScript
+{{< devicon raspberrypi-line fa-2x is-large >}}
+{{< devicon github-plain fa-2x is-large >}}
+{{< devicon git-plain fa-2x is-large >}}
+{{< icon fab fa-gitkraken fa-2x is-large >}}
+{{< devicon atom-original fa-2x is-large >}}
+{{< devicon vscode-plain fa-2x is-large >}}
+{{< devicon nodejs-plain fa-2x is-large >}}
+{{< icon fab fa-npm fa-2x is-large >}}
+{{< devicon yarn-plain fa-2x is-large >}}
+{{< devicon express-original-wordmark fa-2x is-large >}}
+{{< devicon javascript-plain fa-2x is-large >}}
+{{< devicon typescript-plain fa-2x is-large >}}
+{{< devicon react-plain fa-2x is-large >}}
+{{< devicon vuejs-plain fa-2x is-large >}}
+{{< devicon html5-plain fa-2x is-large >}}
+{{< devicon css3-plain fa-2x is-large >}}
+{{< devicon sass-original fa-2x is-large >}}
+{{< devicon firefox-plain fa-2x is-large >}}
+{{< devicon chrome-plain fa-2x is-large >}}
+{{< devicon windows8-plain fa-2x is-large >}}
+{{< devicon linux-plain fa-2x is-large >}}
+{{< devicon debian-plain fa-2x is-large >}}
+{{< devicon ubuntu-plain fa-2x is-large >}}
+{{< devicon ssh-original-wordmark fa-2x is-large >}}
+{{< devicon bash-plain fa-2x is-large >}}
+{{< devicon java-plain fa-2x is-large >}}
+{{< devicon php-plain fa-2x is-large >}}
+{{< devicon apache-plain fa-2x is-large >}}
+{{< devicon nginx-plain fa-2x is-large >}}
+{{< devicon python-plain fa-2x is-large >}}
+{{< devicon mysql-plain fa-2x is-large >}}
+{{< devicon redis-plain fa-2x is-large >}}
+{{< devicon bootstrap-plain fa-2x is-large >}}
+{{< devicon bulma-plain fa-2x is-large >}}
+{{< devicon tailwindcss-plain fa-2x is-large >}}
+{{< icon fab fa-cpanel fa-2x is-large >}}
+{{< devicon wordpress-plain fa-2x is-large >}}
+{{< devicon woocommerce-plain fa-2x is-large >}}
+{{< devicon slack-plain fa-2x is-large >}}
 
 ##### Programming languages
 
