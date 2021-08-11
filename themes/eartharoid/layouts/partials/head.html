@@ -1,3 +1,4 @@
+{{ $BgImgUrl := cond (not (isset .Params "hero")) .Site.Params.hero .Params.hero }}
 <head>
 	<!-- meta -->
 	<meta charset='utf-8'>
@@ -15,14 +16,30 @@
 	<meta property='og:url' content='{{ .Permalink }}'>
 	
 
-	{{ if (isset .Params "hero") }}
-	<meta property='og:image' content='{{ .Params.hero }}'>
-	<meta name='twitter:card' content='summary_large_image'>
-	<meta name='twitter:image' content='{{ .Params.hero }}'>
-	{{ else }}
-	<meta property='og:image' content='{{ .Site.Params.logo }}'>
-	<meta name='twitter:image' content='{{ .Site.Params.logo }}'>
-	{{ end }}
+	{{- if .IsPage -}}
+		{{- if (eq .Section "blog") -}}
+		{{ $date := .PublishDate.Format "January 2, 2006" }}
+		{{ $OGI := (print "https://ogi.sh/article?title=" .Title "&eyebrow=" $date "&imageUrl=" $BgImgUrl) }}
+		<meta property='og:image' content='{{ $OGI }}'>
+		<meta name='image' content='{{ $OGI }}'>
+		<meta itemprop='image' content='{{ $OGI }}'>
+		<meta name='twitter:card' content='summary_large_image'>
+		<meta name='twitter:image' content='{{ $OGI }}'>
+		{{- end -}}
+	{{- else -}}
+		{{- if (isset .Params "hero") -}}
+			<meta property='og:image' content='{{ .Params.hero }}'>
+			<meta name='image' content='{{ .Params.hero }}'>
+			<meta itemprop='image' content='{{ .Params.hero }}'>
+			<meta name='twitter:card' content='summary_large_image'>
+			<meta name='twitter:image' content='{{ .Params.hero }}'>
+		{{- else -}}
+			<meta property='og:image' content='{{ .Site.Params.logo }}'>
+			<meta name='image' content='{{ .Site.Params.logo }}'>
+			<meta itemprop='image' content='{{ .Site.Params.logo }}'>
+			<meta name='twitter:image' content='{{ .Site.Params.logo }}'>
+	{{- end -}}
+	{{- end -}}
 
 	{{- with .Site.Params.twitter -}}
 		<meta name='twitter:site' content='@{{ . }}'>
@@ -38,10 +55,16 @@
 		<meta name='keywords' content='{{ . }}'>
 		{{ end }}
 	{{- else -}}
-		<meta name='description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
-		<meta name='twitter:description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
-		<meta name='og:description' content='{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}'>
-		<meta name='keywords' content='{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}'>
+		{{- $description := default .Site.Params.description .Description -}}
+		{{- if .IsPage -}}
+			{{- if (eq .Section "blog") -}}
+				{{- $description = .Summary -}}
+			{{- end -}}
+		{{- end -}}
+		<meta name='description' content='{{ $description }}'>
+		<meta name='twitter:description' content='{{ $description }}'>
+		<meta name='og:description' content='{{ $description }}'>
+		<meta name='keywords' content='{{ $description }}'>
 	{{- end -}}
 
 	{{ with .Site.Params.author -}}
@@ -71,7 +94,6 @@
 	<script async defer src='https://umami.eartharoid.me/umami.js' data-website-id='0d905706-d403-4522-a3fb-ce633fe10ffc' data-domains='eartharoid.me'></script>
 
 	<!-- styles -->
-	{{ $BgImgUrl := cond (not (isset .Params "hero")) .Site.Params.hero .Params.hero }}
 	<style>
 		.hero {
 			background-image: url('{{ $BgImgUrl }}');
