@@ -4,9 +4,10 @@
   "description": "My personal website",
   "main": "",
   "dependencies": {
+    "puppeteer-serverless": "^2.0.0",
+    "puppeteer-social-image": "^0.8.1",
     "vercel": "^21.1.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
