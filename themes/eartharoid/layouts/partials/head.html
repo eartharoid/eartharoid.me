@@ -16,30 +16,28 @@
 	<meta property='og:url' content='{{ .Permalink }}'>
 	
 
-	{{- if .IsPage -}}
 		{{- if (eq .Section "blog") -}}
-		{{ $date := .PublishDate.Format "January 2, 2006" }}
-		{{ $OGI := (print "https://ogi.sh/article?title=" .Title "&eyebrow=" $date "&imageUrl=" $BgImgUrl) }}
-		<meta property='og:image' content='{{ $OGI }}'>
-		<meta name='image' content='{{ $OGI }}'>
-		<meta itemprop='image' content='{{ $OGI }}'>
-		<meta name='twitter:card' content='summary_large_image'>
-		<meta name='twitter:image' content='{{ $OGI }}'>
-		{{- end -}}
-	{{- else -}}
-		{{- if (isset .Params "hero") -}}
-			<meta property='og:image' content='{{ .Params.hero }}'>
-			<meta name='image' content='{{ .Params.hero }}'>
-			<meta itemprop='image' content='{{ .Params.hero }}'>
+			{{ $date := .PublishDate.Format "January 2, 2006" }}
+			{{ $OGI := (print "https://ogi.sh/article?title=" .Title "&eyebrow=" $date "&imageUrl=" $BgImgUrl) }}
+			<meta property='og:image' content='{{ $OGI }}'>
+			<meta name='image' content='{{ $OGI }}'>
+			<meta itemprop='image' content='{{ $OGI }}'>
 			<meta name='twitter:card' content='summary_large_image'>
-			<meta name='twitter:image' content='{{ .Params.hero }}'>
+			<meta name='twitter:image' content='{{ $OGI }}'>
 		{{- else -}}
-			<meta property='og:image' content='{{ .Site.Params.logo }}'>
-			<meta name='image' content='{{ .Site.Params.logo }}'>
-			<meta itemprop='image' content='{{ .Site.Params.logo }}'>
-			<meta name='twitter:image' content='{{ .Site.Params.logo }}'>
-	{{- end -}}
-	{{- end -}}
+			{{- if (isset .Params "hero") -}}
+				<meta property='og:image' content='{{ .Params.hero }}'>
+				<meta name='image' content='{{ .Params.hero }}'>
+				<meta itemprop='image' content='{{ .Params.hero }}'>
+				<meta name='twitter:card' content='summary_large_image'>
+				<meta name='twitter:image' content='{{ .Params.hero }}'>
+			{{- else -}}
+				<meta property='og:image' content='{{ .Site.Params.logo }}'>
+				<meta name='image' content='{{ .Site.Params.logo }}'>
+				<meta itemprop='image' content='{{ .Site.Params.logo }}'>
+				<meta name='twitter:image' content='{{ .Site.Params.logo }}'>
+			{{- end -}}
+		{{- end -}}
 
 	{{- with .Site.Params.twitter -}}
 		<meta name='twitter:site' content='@{{ . }}'>
