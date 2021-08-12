@@ -5,9 +5,9 @@ draft: false
 description: 'A website, Discord bot, and API, providing an accurate countdown to Christmas since 2017.'
 weight: 20
 # logo: 'https://christmascountdown.live/img/logo/red/santa-outline.png'
-logo: 'https://ik.imagekit.io/eartharoid/christmas-countdown/logo/santa-outline.png'
+logo: 'https://img.eartharoid.me/unsafe/128x128/https://static.eartharoid.me/christmas-countdown/logo/outlined-santa.png'
 # hero: 'https://christmascountdown.live/img/bg/default.jpg'
-hero: 'https://ik.imagekit.io/eartharoid/christmas-countdown/bg/default.jpg?tr=w-1920,h-1280,c-force'
+hero: 'https://img.eartharoid.me/unsafe/1920x1080/filters:format(webp)/https://static.eartharoid.me/christmas-countdown/bg/default.jpg'
 images:
   - 'https://i.imgur.com/NpdPXRC.jpeg'
   - 'https://i.imgur.com/1So3iM8.jpeg'

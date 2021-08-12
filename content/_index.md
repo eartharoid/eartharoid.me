@@ -2,7 +2,7 @@
 title: Home
 slug: /
 images:
- - 'https://ik.imagekit.io/eartharoid/images/HIGH-RES-earth-SunSet-FromSpace-COMPRESSED.jpg?tr=w-1920,h-1080'
+ - 'https://img.eartharoid.me/unsafe/1920x1080/filters:format(webp)/https://static.eartharoid.me/images/earth-sunset-from-space.jpg'
 skills:
   - skill: 'Node.JS'
     level: 70

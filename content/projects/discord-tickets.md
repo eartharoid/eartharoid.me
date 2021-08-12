@@ -3,9 +3,9 @@ title: "Discord Tickets"
 date: 2021-01-19T11:36:34Z
 draft: false
 description: 'An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.'
-logo: 'https://ik.imagekit.io/eartharoid/discord-tickets/icons/white-logo-blurple-background_UMpG-za7Tu.png?updatedAt=1621546599614'
+logo: 'https://img.eartharoid.me/unsafe/128x128/https://static.eartharoid.me/discord-tickets/logo/icon/light/icon.png'
 weight: 30
-hero: 'https://ik.imagekit.io/eartharoid/discord-tickets/banners/blurple-no-text_NTwAIQz35.png?updatedAt=1621546535257'
+hero: 'https://img.eartharoid.me/unsafe/1920x1080/https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png'
 images:
   - 'https://i.imgur.com/xkH4K4d.png'
   - 'https://i.imgur.com/ukvcbrS.png'
@@ -99,7 +99,7 @@ You will find most of information you need at [discordtickets.app](https://disco
 
 If the [documentation](https://discordtickets.app) leaves you with questions, you can ask for help in the [discussions](https://github.com/discord-tickets/bot/discussions/categories/support-q-a) or join the support server on Discord.
 
-[![Discord](https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4)](https://go.eartharoid.me/discord)
+[![Join the Discord server](https://img.eartharoid.me/unsafe/440x200/https://static.eartharoid.me/images/join-discord.png)](https://go.eartharoid.me/discord)
 
 ### Contributing
 
