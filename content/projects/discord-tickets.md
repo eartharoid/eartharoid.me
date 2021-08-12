@@ -3,7 +3,7 @@ title: "Discord Tickets"
 date: 2021-01-19T11:36:34Z
 draft: false
 description: 'An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.'
-logo: 'https://img.eartharoid.me/unsafe/128x128/https://static.eartharoid.me/discord-tickets/logo/icon/light/icon.png'
+logo: 'https://img.eartharoid.me/unsafe/256x256/https://static.eartharoid.me/discord-tickets/logo/icon/light/icon.png'
 weight: 30
 hero: 'https://img.eartharoid.me/unsafe/1920x1080/https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png'
 images:
