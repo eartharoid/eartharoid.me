@@ -7,7 +7,7 @@ logo: 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/disc
 weight: 30
 hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/discord-tickets/banners/blurple-no-text.png@png'
 images:
-  - 'https://i.imgur.com/xkH4K4d.png'
+  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_EMI9yZjiHl.png@png'
   - 'https://i.imgur.com/ukvcbrS.png'
   - 'https://i.imgur.com/cJtMHUq.png'
 categories:

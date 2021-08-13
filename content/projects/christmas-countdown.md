@@ -9,12 +9,12 @@ logo: 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/chri
 # hero: 'https://christmascountdown.live/img/bg/default.jpg'
 hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/christmas-countdown/bg/default.jpg@webp'
 images:
-  - 'https://i.imgur.com/NpdPXRC.jpeg'
-  - 'https://i.imgur.com/1So3iM8.jpeg'
-  - 'https://i.imgur.com/1ZXVTzJ.jpeg'
-  - 'https://i.imgur.com/nneG8CO.jpeg'
+  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_E7IXvdAG5r.jpg@webp'
+  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_gNQZGmlGXK.jpg@webp'
+  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_YkoviSMnDJ.jpg@webp'
+  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_abYVmYPSow.jpg@webp'
   - 'https://i.imgur.com/hfF9C3k.png'
-  - 'https://christmascountdown.live/img/logo/red/santa-outline.png'
+  - 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/christmas-countdown/logo/outlined-santa.png@png'
 categories:
   - 'personal'
 tags:
