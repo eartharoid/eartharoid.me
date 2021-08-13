@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--space-color);
-  background-image: url('https://img.eartharoid.me/unsafe/1920x1080/filters:format(webp)/https://static.eartharoid.me/images/p/nebula-blue.jpg'); 
+  background-image: url('https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/nebula-blue.jpg@webp'); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

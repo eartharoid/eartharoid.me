@@ -9,8 +9,8 @@ enableGitInfo: true
 enableRobotsTXT: true
 params:
   description: 'Hi. I''m Isaac, a 17 year-old student, developer, and photographer.'
-  hero: 'https://img.eartharoid.me/unsafe/1920x1080/https://static.eartharoid.me/images/earth-sunset-from-space.jpg'
-  navbarLogo: 'https://img.eartharoid.me/unsafe/100x15/https://static.eartharoid.me/eartharoid/logo/c/wordmark.png'
+  hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/earth-sunset-from-space.jpg@webp'
+  navbarLogo: 'https://img.eartharoid.me/insecure/rs:auto:100:15/plain/s3://eartharoid/eartharoid/logo/c/wordmark.png@png'
   logo: 'https://static.eartharoid.me/eartharoid/logo/c/icon.png'
   # primaryColour: '#009999'
   primaryColour: '#00C3EE'

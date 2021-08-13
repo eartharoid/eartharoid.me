@@ -3,9 +3,9 @@ title: "Discord Tickets"
 date: 2021-01-19T11:36:34Z
 draft: false
 description: 'An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.'
-logo: 'https://img.eartharoid.me/unsafe/256x256/https://static.eartharoid.me/discord-tickets/logo/icon/light/icon.png'
+logo: 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/discord-tickets/logo/icon/light/icon.png@png'
 weight: 30
-hero: 'https://img.eartharoid.me/unsafe/1920x1080/https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png'
+hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/discord-tickets/banners/blurple-no-text.png@png'
 images:
   - 'https://i.imgur.com/xkH4K4d.png'
   - 'https://i.imgur.com/ukvcbrS.png'
@@ -55,12 +55,6 @@ Although intended for use in a single Discord server, the bot can also function 
 
 #### Features
 
-Discord Tickets is packed full of features, many of which were suggested by its users. If it's missing a feature you want, you can:
-
-- Create a plugin for it, if you can code JavaScript
-- Request someone else to make a plugin
-- [Submit a feature request](https://github.com/discord-tickets/.github/blob/main//CONTRIBUTING.md#submitting-a-feature-request) if you think many other users would benefit from it
-
 Here's some of the things that makes Discord Tickets awesome:
 
 1. **Highly customisable**  
@@ -77,61 +71,19 @@ Each ticket category has its own settings for messages and the support team role
 4. **A beautiful ticket archives portal**  
 **\[COMING SOON\] :** Add the official [Discord Tickets Portal](https://github.com/discord-tickets/portal) plugin for an instant ticket archives website.
 
-1. **Open-source and self-hosted**  
+5. **Open-source and self-hosted**  
 It's yours, you have full control.
 
 6. **Supports multiple databases**  
 Discord Tickets uses [Sequelize](https://github.com/sequelize/sequelize) to allow you to choose from SQLite, MySQL, MariaDB, PostgreSQL, or MSSQL for your database, with very little setup.
 If you choose SQLite, which is the default as it is the easiest, you don't need to do anything! If you choose to use another database (recommended), you only need to install the package(s) with NPM and create the database. All of the database tables are created automatically, regardless of which database type you use.
 
-### Getting started
-
-| [**Host it yourself**](https://discordtickets.app/installation) | [**Fully managed hosting**](https://discordtickets.app/hosting) | [**Public test bot**](https://discord.com/oauth2/authorize?permissions=8&scope=applications.commands%20bot&client_id=475371285531066368) |
-|:---------------------------------------------------------------:|:---------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|
-|   Recommended if you have a host and you've done this before.   |       Recommended if you have no idea what you're doing.        |                                           Try out the bot. Not recommended for production use.                                           |
-|   [Go to the docs »](https://discordtickets.app/installation)   |       [Learn more »](https://discordtickets.app/hosting)        |  [Add to Discord »](https://discord.com/oauth2/authorize?permissions=8&scope=applications.commands%20bot&client_id=475371285531066368)   |
-
-### Documentation
-
-You will find most of information you need at [discordtickets.app](https://discordtickets.app).
-
 ### Support
 
 If the [documentation](https://discordtickets.app) leaves you with questions, you can ask for help in the [discussions](https://github.com/discord-tickets/bot/discussions/categories/support-q-a) or join the support server on Discord.
 
-[![Join the Discord server](https://img.eartharoid.me/unsafe/440x200/https://static.eartharoid.me/images/join-discord.png)](https://go.eartharoid.me/discord)
-
-### Contributing
-
-For contributing instructions, or to find out all of the ways you can contribute, read [CONTRIBUTING.md](https://github.com/discord-tickets/.github/blob/main//CONTRIBUTING.md). All contributions are welcome and encouraged, but please [read the information](https://github.com/discord-tickets/.github/blob/main//CONTRIBUTING.md) given before doing so.
-
-### Contributors
-
-Thank you to everyone to has contributed to Discord Tickets, including everyone who has:
-
-- Contributed code
-- Translated
-- Improved documentation
-- Reported bugs
-- Requested a feature
-- Given help or support to other users
-- Created a public plugin
-- Created resources such as tutorials
-
-**A full list of contributors can be found in [CONTRIBUTORS.md](https://github.com/discord-tickets/bot/blob/main/CONTRIBUTORS.md).**
-
-### Sponsors
-
-Does your community or company use Discord Tickets? Sponsor the project to get your logo shown here.
+[![Join the Discord server](https://img.eartharoid.me/insecure/rs:auto:440:200/plain/s3://eartharoid/images/join-discord.png@png)](https://go.eartharoid.me/discord)
 
 #### Donate
 
 [![Donate at ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/eartharoid)
-
-### License
-
-Discord Tickets is licensed under the [GPLv3 license](https://github.com/discord-tickets/bot/blob/main/LICENSE).
-
-This is not an official Discord product. It is not affiliated with nor endorsed by Discord Inc.
-
-© 2021 Isaac Saunders
