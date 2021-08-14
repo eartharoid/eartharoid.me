@@ -6,6 +6,15 @@
 <body>
 	{{- block "main" . }}{{- end }}
 	{{- partial "footer.html" . -}}
+	<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+	<script>
+		kofiWidgetOverlay.draw('eartharoid', {
+			'type': 'floating-chat',
+			'floating-chat.donateButton.text': 'Support me',
+			'floating-chat.donateButton.background-color': '#00C3EE',
+			'floating-chat.donateButton.text-color': '#FFF'
+		});
+	</script>
 </body>
 
 </html>
