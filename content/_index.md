@@ -15,7 +15,7 @@ skills:
   - skill: 'Java'
     level: 5
   - skill: 'Go'
-    level: 1
+    level: 0.1
 ---
 
 ## About me
@@ -38,7 +38,7 @@ I first tried photography in 2017 and I have been doing a little bit each year, 
 {{< /html >}}
 
 {{< html >}}
-<div class="card mt-6 mb-6">
+<div class="card my-6">
 	<div class="card-content">
 		<p class="title">eartharoid</p>
 		<p>
@@ -50,13 +50,17 @@ I first tried photography in 2017 and I have been doing a little bit each year, 
 </div>
 {{< /html >}}
 
-## Portfolio
+## Résumé
+
+This isn't a full résumé but I needed a heading for this section.
+
+### Software
 
 I have worked on many projects. For my major projects, click the button below.
 
 {{< html >}}
 <a href='/projects'>
-  <button class='button is-info is-outlined mt-2'>
+  <button class='button is-info is-outlined mt-2 mb-6'>
     <span>View my projects</span>
     <span class='icon'>
       <i class='fas fa-chevron-right'></i>
@@ -65,11 +69,9 @@ I have worked on many projects. For my major projects, click the button below.
 </a>
 {{< /html >}}
 
-### Software
-
 #### My skills
 
-It appears that it is popular to have a list of icons/logos for "skills", so here's mine:
+It seems popular to have a list of icons/logos to represent "skills", so here's mine:
 
 {{< devicon raspberrypi-line fa-2x is-large >}}
 {{< devicon github-plain fa-2x is-large >}}
@@ -118,7 +120,7 @@ A lot of portfolio sites have progress bars or numbers representing ability to u
 
 {{< skills >}}
 
-#### My work
+#### Portfolio
 
 My notable work is listed here. This includes my major (primary) projects, secondary and "just for fun" projects, commissions, and other projects which I think are important. Some projects are not made entirely by me. To see all of my public work, visit [my GitHub profile](https://github.com/eartharoid).
 
@@ -126,11 +128,11 @@ My notable work is listed here. This includes my major (primary) projects, secon
 
 Websites I have worked on, although not necessarily completely made by me.
 
-- [christmascountdown.live](https://christmascoutdown.live)
-- [illusionthe.dev](https://www.illusionthe.dev)
-- [left4craft.org](https://www.left4craft.org)
-- [eartharoid.me](https://eartharoid.me)
-- [blog.muetab.com](https://blog.muetab.com)
+- [christmascountdown.live](https://christmascoutdown.live) - my first website using a framework (Vue)
+- [illusionthe.dev](https://www.illusionthe.dev) - my first website commission
+- [left4craft.org](https://www.left4craft.org) - Next.JS and Tailwind
+- [eartharoid.me](https://eartharoid.me) - my personal website, you're looking at it right now, made with Hugo
+- [blog.muetab.com](https://blog.muetab.com) - another Hugo website
 
 ##### Node.JS (JS/TS)
 
@@ -148,4 +150,15 @@ I helped with some of the [plugins for Left4Craft](https://github.com/left4craft
 
 Honestly, I'm not very good at photography. I don't do it very often but I enjoy it. I like doing landscape and wildlife photography the most.
 
-You can view a small collection of some of my best photos in [my gallery](/gallery).
+You can view a small collection of some of my best (or in some cases, not very good but still a favourite) photos in [my gallery](/gallery).
+
+{{< html >}}
+<a href='/gallery'>
+  <button class='button is-info is-outlined mt-2'>
+    <span>View photography portfolio</span>
+    <span class='icon'>
+      <i class='fas fa-chevron-right'></i>
+    </span>
+  </button>
+</a>
+{{< /html >}}
