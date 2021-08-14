@@ -8,10 +8,8 @@ logo: ''
 hero: ''
 images:
   - ''
-categories:
-  - ''
-tags:
-    - ''
+# tags:
+#     - ''
 links:
   - name: 'GitHub'
     icon: 'fab fa-github'

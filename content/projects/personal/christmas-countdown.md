@@ -15,8 +15,6 @@ images:
   - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_abYVmYPSow.jpg@webp'
   - 'https://i.imgur.com/hfF9C3k.png'
   - 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/christmas-countdown/logo/outlined-santa.png@png'
-categories:
-  - 'personal'
 tags:
   - 'node.js'
   - 'discord'
@@ -59,7 +57,7 @@ Version 2 of the Discord bot was released, with not many new features, but "bett
 
 #### 2020
 
-In the first week of September development started on v3 of the Discord bot, which was released on October 24th. The bot was completely rewritten and had new features, including translations and much needed timezone support for users and servers. Work on the new website started the day after the bot was released. 
+In the first week of September development started on v3 of the Discord bot, which was released on October 24th. The bot was completely rewritten and had new features, including translations and much needed timezone support for users and servers. Work on the new website started the day after the bot was released.
 
 ## Support
 

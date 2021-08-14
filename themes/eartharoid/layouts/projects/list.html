@@ -3,81 +3,83 @@
 	{{- partial "hero.html" . -}}
 	<section id='main' class='section'>
 		<container id='content' class='container is-fluid'>
-			<div class='content has-text-centered mb-6'>
+			<div class='content has-text-centered'>
 				{{ .Content }}
 			</div>
 		</container>
 		<container class='container is-fluid'>
-			<div class='columns'>
-				{{ range .Pages }}
-				<div class='column'>
-					<div class='card'>
-						<!-- <div class='card-header'>
-							{{ with .Params.tags }}
-							<p class='p-3 tags'>
-								{{ range . }}
-								<a href='{{ (print "tags/" (urlize .) ) | relURL}}' class='tag is-primary'>{{ . }}</a>
-								{{ end }}
-							</p>
-							{{ end }}
-						</div> -->
-						<div class='card-content'>
-
-							<span class='columns'>
-								<a href='{{ .Permalink }}' class='column is-one-third is-tablet'>
-									<figure class='image is-3by3'>
-										<img src='{{ .Param "logo" }}' alt='Logo' style='max-width:15rem;'>
+			{{ range .Sections }}
+			<div class='container is-fluid mt-6'>
+				<div class='block has-text-centered'>
+					<h2 class='is-size-4'>{{ .Title }}</h2>
+					<p>{{ .Description }}</p>
+				</div>
+				<div class='columns is-centered'>
+					{{ range .Pages }}
+					<div class='column is-one-fifth-fullhd is-one-third-dekstop'>
+						<div class='card has-text-centered'>
+							<div class='card-header'>
+								<a href='{{ .Permalink }}' class='column'>
+									<figure class='image is-24x24'>
+										<img src='{{ .Param "logo" }}' alt='Logo' style='border-radius:3px;'>
 									</figure>
 								</a>
-
-								<div class='column'>
-									<a href='{{ .Permalink }}' class='is-size-4'>
-										<h2>{{ .Title }}</h2>
-									</a>
-									{{ with .Params.tags }}
-									<p class='tags'>
-										{{ range . }}
-										<a href='{{ (print "tags/" (urlize .) ) | relURL}}'
-											class='tag is-primary'>{{ . }}</a>
-										{{ end }}
-									</p>
+								{{ with .Params.tags }}
+								<p class='p-3 tags'>
+									{{ range . }}
+									<a href='{{ (print "tags/" (urlize .) ) | relURL}}'
+										class='tag is-primary'>{{ . }}</a>
 									{{ end }}
-								</div>
-							</span>
-
-							<div class='columns'>
-								<div class='column'>
-									<p style='min-height:5rem;'>{{ .Description }}</p>
-									<a href='{{ .Permalink }}' class='card-footer-item'>
-										<button class='button is-info is-fullwidth'>
-											<span>View</span>
-											<span class='icon'>
-												<i class='fas fa-chevron-right'></i>
-											</span>
-										</button>
-									</a>
+								</p>
+								{{ end }}
+							</div>
+							<!-- <div class='card-image'>
+								<figure class='image is-3by3'>
+									<img src='{{ .Param "logo" }}'
+										alt='{{ .Title }}'>
+								</figure>
+							</div> -->
+							<div class='card-content project-card-content has-text-white' style='background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("{{ .Param "hero" }}") center/800px;'>
+								<div class='columns'>
+									<div class='column'>
+										<p>
+											<a href='{{ .Permalink }}' class='is-size-4'>
+												<h2>{{ .Title }}</h2>
+											</a>
+										</p>
+										<p style='min-height:5rem;'>{{ .Description }}</p>
+										<a href='{{ .Permalink }}' class='card-footer-item'>
+											<button class='button is-info is-fullwidth'>
+												<span>View</span>
+												<span class='icon'>
+													<i class='fas fa-chevron-right'></i>
+												</span>
+											</button>
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
-						{{with .Param "links" }}
-						<div class='card-footer'>
-							{{ range first 2 . }}
-							<a href='{{ .url }}' class='card-footer-item' target='_blank'>
-								<button class='button'>
-									<span class='icon'>
-										<!-- color: {{ .colour }}; -->
-										<i class='{{ .icon }}'></i>
-									</span>
-									<span>{{ .name }}</span>
-								</button>
-							</a>
+							{{with .Param "links" }}
+							<div class='card-footer'>
+								{{ range first 2 . }}
+								<a href='{{ .url }}' class='card-footer-item' target='_blank'>
+									<button class='button'>
+										<span class='icon'>
+											<!-- color: {{ .colour }}; -->
+											<i class='{{ .icon }}'></i>
+										</span>
+										<span>{{ .name }}</span>
+									</button>
+								</a>
+								{{ end }}
+							</div>
 							{{ end }}
 						</div>
-						{{ end }}
 					</div>
+					{{ end }}
 				</div>
-				{{ end }}
 			</div>
+			{{ end }}
 		</container>
 	</section>
 </main>

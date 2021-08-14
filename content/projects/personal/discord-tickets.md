@@ -10,8 +10,6 @@ images:
   - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_EMI9yZjiHl.png@png'
   - 'https://i.imgur.com/ukvcbrS.png'
   - 'https://i.imgur.com/cJtMHUq.png'
-categories:
-  - 'personal'
 tags:
     - 'node.js'
     - 'discord'

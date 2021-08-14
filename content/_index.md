@@ -52,12 +52,12 @@ I first tried photography in 2017 and I have been doing a little bit each year, 
 
 ## Portfolio
 
-I have worked on many projects. For my personal projects, click the button below. My other work is listed below.
+I have worked on many projects. For my major projects, click the button below.
 
 {{< html >}}
 <a href='/projects'>
   <button class='button is-info is-outlined mt-2'>
-    <span>View my personal projects</span>
+    <span>View my projects</span>
     <span class='icon'>
       <i class='fas fa-chevron-right'></i>
     </span>
@@ -120,7 +120,7 @@ A lot of portfolio sites have progress bars or numbers representing ability to u
 
 #### My work
 
-My notable work is listed here. To see all of my public work, visit [my GitHub profile](https://github.com/eartharoid).
+My notable work is listed here. This includes my major (primary) projects, secondary and "just for fun" projects, commissions, and other projects which I think are important. Some projects are not made entirely by me. To see all of my public work, visit [my GitHub profile](https://github.com/eartharoid).
 
 ##### Websites
 

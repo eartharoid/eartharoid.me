@@ -5,50 +5,50 @@ html {
 .navbar,
 .navbar-menu {
 	color: white;
-	/* idk why but the light theme (Fatly) refuses to have a transparent navbar,
+	/* idk why but the light theme (Flatly) refuses to have a transparent navbar,
 	it's always dark grey. it doesn't look bad, but transparent looks better. */
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .embla {
-  position: relative;
-  padding: 20px;
-  max-width: 670px;
-  /* min-height: 380px; */
-  min-height: 285px;
-  margin-left: auto;
-  margin-right: auto;
+	position: relative;
+	padding: 20px;
+	max-width: 670px;
+	/* min-height: 380px; */
+	min-height: 285px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .embla__viewport {
-  overflow: hidden;
-  width: 100%;
+	overflow: hidden;
+	width: 100%;
 }
 
 .embla__viewport.is-draggable {
-  cursor: move;
-  cursor: grab;
+	cursor: move;
+	cursor: grab;
 }
 
 .embla__viewport.is-dragging {
-  cursor: grabbing;
+	cursor: grabbing;
 }
 
 .embla__container {
-  display: flex;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  margin-left: -10px;
+	display: flex;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	margin-left: -10px;
 }
 
 .embla__slide {
-  padding-left: 10px;
-  position: relative;
-  min-height: 100%;
-  min-width: 60%;
-  width: auto;
+	padding-left: 10px;
+	position: relative;
+	min-height: 100%;
+	min-width: 60%;
+	width: auto;
 }
 
 /* .embla__slide:nth-child(1) {
@@ -92,71 +92,78 @@ html {
 } */
 
 .embla__slide__inner {
-  position: relative;
-  overflow: hidden;
-  /* height: 190px; */
-  /* height: 380px; */
-  height: 285px;
+	position: relative;
+	overflow: hidden;
+	/* height: 190px; */
+	/* height: 380px; */
+	height: 285px;
 }
 
 .embla__slide__img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  max-height: 285px;
-  /* max-width: 670px; */
-  width: auto;
-  height: auto;
-  /* min-height: 100%; */
-  /* min-width: 100%; */
-  max-width: none;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	max-height: 285px;
+	/* max-width: 670px; */
+	width: auto;
+	height: auto;
+	/* min-height: 100%; */
+	/* min-width: 100%; */
+	max-width: none;
+	transform: translate(-50%, -50%);
 }
 
 .embla__button {
-  outline: 0;
-  cursor: pointer;
-  background-color: transparent;
-  touch-action: manipulation;
-  position: absolute !important;
-  z-index: 1;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  border: 0;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  fill: #1bcacd;
-  padding: 0;
+	outline: 0;
+	cursor: pointer;
+	background-color: transparent;
+	touch-action: manipulation;
+	position: absolute !important;
+	z-index: 1;
+	top: 50% !important;
+	transform: translateY(-50%) !important;
+	border: 0;
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	fill: #1bcacd;
+	padding: 0;
 }
 
 .embla__button:disabled {
-  cursor: default;
-  opacity: 0.3;
+	cursor: default;
+	opacity: 0.3;
 }
 
 .embla__button__svg {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .embla__button--prev {
-  left: 27px;
+	left: 27px;
 }
 
 .embla__button--next {
-  right: 27px;
+	right: 27px;
 }
 
 .columns.is-vcentered {
-  -webkit-box-align: center;
-     -ms-flex-align: center;
-        align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .icon.is-large {
 	width: 4rem !important;
 	height: 4rem !important;
+}
+
+
+.project-card-content {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 800px;
 }

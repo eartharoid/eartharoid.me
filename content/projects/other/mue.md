@@ -8,9 +8,10 @@ logo: 'https://github.com/mue.png'
 hero: 'https://i.imgur.com/SLQXBa7.jpeg'
 images:
   - 'https://i.imgur.com/SLQXBa7.jpeg'
-  - 'https://raw.githubusercontent.com/mue/mue/main/assets/screenshot.webp'
-  - 'https://raw.githubusercontent.com/mue/mue/main/assets/screenshot2.webp'
+  - 'https://cdn.statically.io/gh/mue/mue/main/assets/screenshot.webp'
+  - 'https://cdn.statically.io/gh/mue/mue/main/assets/screenshot2.webp'
 tags:
+    - 'node.js'
     - 'react'
 links:
   - name: 'Website'
