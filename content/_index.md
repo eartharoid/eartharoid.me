@@ -54,6 +54,17 @@ I first tried photography in 2017 and I have been doing a little bit each year, 
 
 This isn't a full résumé but I needed a heading for this section.
 
+<!-- {{< html >}}
+<a href='https://static.eartharoid.me/files/my-resume.pdf'>
+  <button class='button is-info is-outlined mt-2 mb-4'>
+    <span>View my full résumé</span>
+    <span class='icon'>
+      <i class='fas fa-chevron-right'></i>
+    </span>
+  </button>
+</a>
+{{< /html >}} -->
+
 ### Software
 
 I have worked on many projects. For my major projects, click the button below.

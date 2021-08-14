@@ -31,19 +31,6 @@ skills:
 ## About
 
 [![GitHub stars](https://img.shields.io/github/stars/discord-tickets/bot?style=flat-square)](https://github.com/discord-tickets/bot/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/discord-tickets/bot?style=flat-square)](https://github.com/discord-tickets/bot/stargazers)
-[![License](https://img.shields.io/github/license/discord-tickets/bot?style=flat-square)](https://github.com/discord-tickets/bot/blob/main/LICENSE)
-[![Codacy](https://img.shields.io/codacy/grade/b974eb5f984c40868e07d82c968bd02d?logo=codacy&style=flat-square)](https://www.codacy.com/gh/discord-tickets/bot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=discord-tickets/bot&amp;utm_campaign=Badge_Grade)
-[![Discord](https://img.shields.io/discord/451745464480432129?label=discord&color=7289DA&style=flat-square)](https://go.eartharoid.me/discord)
-[![Crowdin](https://badges.crowdin.net/discord-tickets/localized.svg)](https://i18n.discordtickets.app/project/discord-tickets)
-
-<br>
-
-![Discord Tickets](https://ik.imagekit.io/eartharoid/discord-tickets/wordmark/gradient_HTC7nqZr9.png)
-
-An open-source ticket management bot for Discord - a free alternative to the premium and white-label plans of other popular ticketing bots.
-
-### What is this?
 
 Discord Tickets is a Discord bot for creating and managing ticket channels. It is a free and open-source alternative to the paid "premium" and "white-label" plans of popular ticketing bots, such as [Ticket Tool](https://tickettool.xyz/), [TicketsBot](https://ticketsbot.net/), [Tickety](https://tickety.net/), [Helper.gg](https://helper.gg/), [Helper](https://helper.wtf), and others.
 
@@ -51,7 +38,7 @@ Discord Tickets is feature-rich and much more customisable than many of the bots
 
 Although intended for use in a single Discord server, the bot can also function in multiple servers at once if you run more than one community.
 
-#### Features
+### Features
 
 Here's some of the things that makes Discord Tickets awesome:
 
