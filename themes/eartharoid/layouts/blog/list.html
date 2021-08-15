@@ -10,7 +10,7 @@
 				<div class='column is-desktop is-two-thirds'>
 
 					{{ range .Pages }}
-					<div class='content box'>
+					<div class='content box' {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}>
 						<div class='block'>
 							<p class='title is-size-4'>
 								<a href='{{ .Permalink }}'>{{ .Title }}</a>
@@ -51,7 +51,7 @@
 					{{ end }}
 				</div>
 				<div class='column'>
-					<div class='content box'>
+					<div class='content box' {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}>
 						<h6>Featured</h6>
 						{{ with .Params.featured }}
 						{{ with $.Site.GetPage "blog" (print . ".md") }}
