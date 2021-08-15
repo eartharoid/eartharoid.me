@@ -18,6 +18,7 @@ images:
 tags:
   - 'node.js'
   - 'discord'
+  - 'vue'
 links:
   - name: 'Website'
     icon: 'fas fa-home'
