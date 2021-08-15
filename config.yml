@@ -138,5 +138,5 @@ markup:
     # noClasses: true
     style: monokai
     tabWidth: 4
-# taxonomies:
-#   tag: tags
+taxonomies:
+  tag: tags
