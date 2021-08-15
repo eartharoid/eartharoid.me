@@ -10,7 +10,7 @@
 				<div class='column is-desktop is-two-thirds'>
 
 					{{ range .Pages }}
-					<div class='content box' {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}>
+					<div class='content box has-text-white' {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}>
 						<div class='block'>
 							<p class='title is-size-4'>
 								<a href='{{ .Permalink }}'>{{ .Title }}</a>
@@ -51,7 +51,19 @@
 					{{ end }}
 				</div>
 				<div class='column'>
-					<div class='content box' {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}>
+					<div class='content box has-text-centered'>
+						<p class='is-size-5'>Want to get an email when I publish a new blog post?</p>
+						<a href='https://cdn.forms-content.sg-form.com/0122637e-fdcd-11eb-86f2-1a5c682fc748' target="_blank">
+								<button class='button is-primary is-fullwidth'>
+									<span>Join the mail list</span>
+									<span class='icon'>
+										<i class="fas fa-external-link-alt"></i>
+									</span>
+								</button>
+							</a>
+						
+					</div>
+					<div class='content box'> <!-- {{ with .Param "hero" }}style='background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ), url("{{ . }}") center/1920px;'{{ end }}-->
 						<h6>Featured</h6>
 						{{ with .Params.featured }}
 						{{ with $.Site.GetPage "blog" (print . ".md") }}
