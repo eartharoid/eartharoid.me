@@ -20,11 +20,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/devon-2018
-  label: Devon 2018
-  create: all
-  match: "**/*"
-- type: directory
   path: content/gallery
   label: Gallery
   create: all
