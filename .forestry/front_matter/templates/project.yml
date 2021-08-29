@@ -1,0 +1,44 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: description
+  label: description
+- type: textarea
+  name: logo
+  label: logo
+- type: number
+  name: weight
+  label: weight
+- type: textarea
+  name: hero
+  label: hero
+- type: list
+  name: images
+  label: images
+- type: list
+  name: tags
+  label: tags
+- type: field_group_list
+  name: links
+  label: links
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: icon
+    label: icon
+  - type: text
+    name: url
+    label: url
+- type: list
+  name: skills
+  label: skills
