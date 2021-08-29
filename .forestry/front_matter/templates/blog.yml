@@ -1,0 +1,16 @@
+---
+label: Blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: hero
+  label: hero
+- type: list
+  name: images
+  label: images
