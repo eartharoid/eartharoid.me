@@ -41,7 +41,7 @@ Left4Craft is a Minecraft server which started in 2013 (I think). I joined in Ma
 
 I have helped a bit with the plugins, but I have done much more for the Discord bot and the website.
 
-> I also accidentally the forums in April 2020 whilst updating phpBB, which is why I made a new website for Left4Craft.
+> I also accidentally deleted the forums in April 2020 whilst updating phpBB, which is why I made a new website for Left4Craft.
 
 ## Support
 
