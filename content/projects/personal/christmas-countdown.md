@@ -62,7 +62,7 @@ In the first week of September development started on v3 of the Discord bot, whi
 
 ## Support
 
-[![Join my Discord server](https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4)](https://go.eartharoid.me/discord)
+[![Join my Discord server](https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4)](https://lnk.earth/discord)
 
 or [contact me](/contact).
 

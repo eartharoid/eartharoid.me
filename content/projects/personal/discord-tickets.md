@@ -67,7 +67,7 @@ If you choose SQLite, which is the default as it is the easiest, you don't need 
 
 If the [documentation](https://discordtickets.app) leaves you with questions, you can ask for help in the [discussions](https://github.com/discord-tickets/bot/discussions/categories/support-q-a) or join the support server on Discord.
 
-[![Join the Discord server](https://img.eartharoid.me/insecure/rs:auto:440:200/plain/s3://eartharoid/images/join-discord.png@png)](https://go.eartharoid.me/discord)
+[![Join the Discord server](https://img.eartharoid.me/insecure/rs:auto:440:200/plain/s3://eartharoid/images/join-discord.png@png)](https://lnk.earth/discord)
 
 #### Donate
 

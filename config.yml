@@ -69,7 +69,7 @@ menu:
       weight: 10
     - identifier: discord
       name: Discord server
-      url: 'https://go.eartharoid.me/discord'
+      url: 'https://lnk.earth/discord'
       params:
         icon: 'fab fa-discord'
       weight: 20
