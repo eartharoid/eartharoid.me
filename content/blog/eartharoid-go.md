@@ -62,5 +62,7 @@ To conclude, my URL shortener:
 - has better analytics with Umami
 - has a cleaner preview page
 - was (mostly) made in less than a day
+ 
+You can view the source code [on GitHub](https://github.com/eartharoid/go).
 
 > Photo by [Dynamic Wang](https://unsplash.com/@dynamicwang) on [Unsplash](https://unsplash.com/).
