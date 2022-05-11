@@ -1,0 +1,9 @@
+{
+	"grammarly.config.documentDialect": "british",
+	"grammarly.selectors": [
+		{
+			"language": "markdown",
+			"scheme": "file"
+		}
+	]
+}
