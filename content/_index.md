@@ -139,13 +139,13 @@ My notable work is listed here. This includes my major (primary) projects, secon
 
 Websites I have worked on, although not necessarily completely made by me.
 
-- [christmascountdown.live](https://christmascoutdown.live) - my first website using a framework (Vue)
+- [christmascountdown.live](https://christmascoutdown.live) - my first website using a framework (Vue, now Svelte)
 - [illusionthe.dev](https://www.illusionthe.dev) - my first website commission
-- [left4craft.org](https://www.left4craft.org) - Next.JS and Tailwind
+- [left4craft.org](https://www.left4craft.org) - Nextjs and tailwind
 - [eartharoid.me](https://eartharoid.me) - my personal website, you're looking at it right now, made with Hugo
 - [blog.muetab.com](https://blog.muetab.com) - another Hugo website
 
-##### Node.JS (JS/TS)
+##### Node.js (JS/TS)
 
 - [leekslazylogger](https://github.com/eartharoid/leekslazylogger) - a logger module
 - [dtf](https://github.com/eartharoid/dtf) - a date-time formatter module, originally for leekslazylogger
