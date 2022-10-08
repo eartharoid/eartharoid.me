@@ -3,7 +3,7 @@
 
 name = "eartharoid"
 license = "MIT"
-licenselink = "https://github.com/eartharoid/eartharoid.me/blob/master/LICENSE"
+licenselink = "https://github.com/eartharoid/eartharoid.me/blob/main/LICENSE"
 description = "My Hugo theme"
 homepage = "https://eartharoid.me/"
 tags = ["bulma"]

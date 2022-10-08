@@ -21,7 +21,7 @@ params:
   footer: |
     Created with [Hugo](https://gohugo.io/) by Isaac.
 
-    This website is [open source](https://github.com/eartharoid/eartharoid.me).
+    This website is [open-source](https://github.com/eartharoid/eartharoid.me).
 # sectionPagesMenu: navbar # automated
 menu:
   navbar:
