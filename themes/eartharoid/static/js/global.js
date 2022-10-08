@@ -26,9 +26,9 @@ if (!localStorage.getItem('theme')) {
 const theme = localStorage.getItem('theme');
 
 if (theme === 'dark') {
-	enableLightTheme();
-} else {
 	enableDarkTheme();
+} else {
+	enableLightTheme();
 }
 
 document.getElementById('darkThemeCSS').remove();
