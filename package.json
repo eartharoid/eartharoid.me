@@ -4,6 +4,7 @@
   "description": "My personal website",
   "main": "",
   "dependencies": {
+    "hugo": "^0.0.3",
     "vercel": "^28.4.8"
   },
   "devDependencies": {},
