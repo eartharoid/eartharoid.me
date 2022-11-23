@@ -18,12 +18,24 @@ npm install
 and
 
 ```bash
-hugo serve
+yarn dev
+```
+
+or
+
+```bash
+npm run dev
 ```
 
 ## Build
 To build, run:
 
 ```bash
-hugo
+yarn build
+```
+
+or
+
+```bash
+npm run build
 ```
