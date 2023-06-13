@@ -20,7 +20,7 @@ skills:
 
 ## About me
 
-Hi. I'm Isaac, an 19 year-old student & developer from England. I write code, think about code, procrastinate *(a lot)*, and occasionally do photography. I like making things, both physically and digitally. I find science interesting, *but also sometimes incredibly boring*.
+Hi. I'm Isaac, a 19 year-old student & developer from England. I write code, think about code, procrastinate *(a lot)*, and occasionally do photography. I like making things, both physically and digitally. I find science interesting, *but also sometimes incredibly boring*.
 
 I started messing with code a little in 2016, starting with very basic Node.JS and some basic HTML & CSS only web pages. I have been writing more code every year since, as my GitHub profile shows.
 
