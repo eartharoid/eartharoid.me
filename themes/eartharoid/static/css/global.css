@@ -10,6 +10,11 @@ html {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
+/* code block line numbers */
+pre span a {
+  user-select: none;
+}
+
 .embla {
   position: relative;
   padding: 20px;
