@@ -2,7 +2,7 @@
 title: Home
 slug: /
 images:
- - 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/earth-sunset-from-space.jpg@webp'
+ - '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/images/p/earth-sunset-from-space.jpg'
 skills:
   - skill: 'Node.JS'
     level: 70

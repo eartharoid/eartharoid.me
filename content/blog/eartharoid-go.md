@@ -12,11 +12,11 @@ tags:
 If you're attentive, you might have noticed I already have a URL shortener at `go.eartharoid.me`.
 This was originally a [YOURLS](https://yourls.org/) instance until I made [a custom solution](https://github.com/eartharoid/go/tree/v1) with Vercel and Firebase/Firestore in January 2021.
 
-![](https://i.imgur.com/jJf6syj.png)
+![](https://static.eartharoid.me/x/2025/10/jJf6syj.png)
 *^ The landing page of the 2021 version*
 
 I made the Vercel-Firebase URL shortener because I wanted something fast and serverless, but I still wanted the API, admin UI, and analytics that YOURLS had.
-[It worked well](https://imgur.com/a/ZR0YXMg), except that Vercel's caching made the management, preview, and stats pages almost useless.
+[It worked well](https://static.eartharoid.me/x/2025/10/Imgur%20Album%20eartharoid%20go.zip), except that Vercel's caching made the management, preview, and stats pages almost useless.
 This was probably an easy fix, but I didn't know how to do it and I gave up quickly.
 
 Less than 18 months later, my custom and serverless URL shortener had redirected over [5000 requests from 3000 visitors](https://static.eartharoid.me/k/22/05/09223553.png).

@@ -1,23 +1,23 @@
-baseURL: 'https://eartharoid.me'
-languageCode: 'en-gb'
+baseURL: "https://eartharoid.me"
+languageCode: "en-gb"
 title: eartharoid
-copyright: '&copy; 2022 Isaac Saunders'
+copyright: "&copy; 2022 Isaac Saunders"
 # copyright: 'Isaac Saunders'
 theme: eartharoid
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 params:
-  description: 'Hi. I''m Isaac, a 19 year-old student, developer, and photographer from England.'
-  hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/earth-sunset-from-space.jpg@webp'
-  navbarLogo: 'https://img.eartharoid.me/insecure/rs:auto:100:15/plain/s3://eartharoid/eartharoid/logo/c/wordmark.png@png'
-  logo: 'https://static.eartharoid.me/eartharoid/logo/c/icon.png'
+  description: "Hi. I'm Isaac, a 19 year-old student, developer, and photographer from England."
+  hero: "https://eartharoid.me/cdn-cgi/image/height=1080,format=avif/https://static.eartharoid.me/images/p/earth-sunset-from-space.jpg"
+  navbarLogo: "https://eartharoid.me/cdn-cgi/image/width=100/https://static.eartharoid.me/eartharoid/logo/c/wordmark.png"
+  logo: "https://eartharoid.me/cdn-cgi/image/width=128/https://static.eartharoid.me/eartharoid/logo/c/icon.png"
   # primaryColour: '#009999'
-  primaryColour: '#00C3EE'
-  keywords: 'eartharoid, Isaac'
-  author: 'eartharoid'
-  github: 'https://github.com/eartharoid/eartharoid.me'
-  twitter: 'eartharoid'
+  primaryColour: "#00C3EE"
+  keywords: "eartharoid, Isaac"
+  author: "eartharoid"
+  github: "https://github.com/eartharoid/eartharoid.me"
+  twitter: "eartharoid"
   footer: |
     Created with [Hugo](https://gohugo.io/) by Isaac.
 
@@ -63,53 +63,53 @@ menu:
   socialIcons:
     - identifier: github
       name: GitHub
-      url: 'https://github.com/eartharoid'
+      url: "https://github.com/eartharoid"
       params:
-        icon: 'fab fa-github'
+        icon: "fab fa-github"
       weight: 10
     - identifier: discord
       name: Discord server
-      url: 'https://lnk.earth/discord'
+      url: "https://lnk.earth/discord"
       params:
-        icon: 'fab fa-discord'
+        icon: "fab fa-discord"
       weight: 20
     - identifier: instagram
       name: Instagram
-      url: 'https://instagram.com/eartharoid'
+      url: "https://instagram.com/eartharoid"
       params:
-        icon: 'fab fa-instagram'
+        icon: "fab fa-instagram"
       weight: 30
     - identifier: twitter
       name: Twitter
-      url: 'https://twitter.com/eartharoid'
+      url: "https://twitter.com/eartharoid"
       params:
-        icon: 'fab fa-twitter'
+        icon: "fab fa-twitter"
       weight: 40
     - identifier: kofi
       name: Ko-fi
-      url: 'https://ko-fi.com/eartharoid'
+      url: "https://ko-fi.com/eartharoid"
       params:
-        icon: 'fas fa-coffee'
+        icon: "fas fa-coffee"
       weight: 50
 outputs:
   home:
-  - HTML
-  - Sitemap
+    - HTML
+    - Sitemap
   page:
-  - HTML
-  - Sitemap
+    - HTML
+    - Sitemap
   # - JSON
   section:
-  - HTML
-  - Sitemap
+    - HTML
+    - Sitemap
   # - JSON
   taxonomy:
-  - HTML
-  - Sitemap
+    - HTML
+    - Sitemap
   # - JSON
   term:
-  - HTML
-  - Sitemap
+    - HTML
+    - Sitemap
   # - JSON
 markup:
   renderer:
@@ -131,7 +131,7 @@ markup:
     codeFences: true
     guessSyntax: false
     hl_Lines: false
-    lineAnchors: 'L'
+    lineAnchors: "L"
     lineNoStart: 1
     lineNos: true
     lineNumbersInTable: false

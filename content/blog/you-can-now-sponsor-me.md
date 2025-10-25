@@ -2,7 +2,7 @@
 title: "You can now sponsor me"
 date: 2021-08-08T22:35:33+01:00
 draft: false
-# hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/danist-bviex5lwf3s-unsplash.jpg@webp'
+# hero: '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/images/p/danist-bviex5lwf3s-unsplash.jpg'
 hero: 'https://storage.ko-fi.com/cdn/generated/aac8fzkyo/d462dbfa-6abf-4867-9340-3b413dceffc8.jpg'
 images:
   - 'https://storage.ko-fi.com/cdn/generated/aac8fzkyo/d462dbfa-6abf-4867-9340-3b413dceffc8.jpg'

@@ -3,10 +3,10 @@
 title: "Adding location data to photos with Google Maps Timeline"
 date: 2023-08-29T01:05:57+01:00
 draft: false
-hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/my-photos/misc/IMG_9612.JPG@webp'
+hero: '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/my-photos/misc/IMG_9612.JPG'
 images:
-  - 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/my-photos/misc/IMG_9399.JPG@webp'
-  - 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/my-photos/misc/IMG_9399.JPG@webp'
+  - '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/my-photos/misc/IMG_9399.JPG'
+  - '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/my-photos/misc/IMG_9399.JPG'
 tags:
   - 'photography'
 ---

@@ -4,11 +4,11 @@ date: 2021-01-19T11:36:34Z
 draft: false
 description: 'A small community Minecraft server with survival, creative, and more.'
 weight: 10
-logo: 'https://www.left4craft.org/assets/logo/main/566.png'
-hero: 'https://www.left4craft.org/assets/img/mc-bg1.jpg'
+logo: '/cdn-cgi/image/height=256/https://static.eartharoid.me/x/2025/10/566.png'
+hero: 'https://www.left4craft.org/images/avalon-sunset.webp'
 images:
-  - 'https://www.left4craft.org/assets/logo/main/566.png'
-  - 'https://www.left4craft.org/assets/img/mc-bg1.jpg'
+  - '/cdn-cgi/image/height=256/https://static.eartharoid.me/x/2025/10/566.png'
+  - 'https://www.left4craft.org/images/avalon-sunset.webp'
 tags:
     - 'node.js'
     - 'java'

@@ -2,9 +2,9 @@
 title: "As you can see, I have a blog"
 date: 2021-08-15T14:12:57+01:00
 draft: false
-hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/danist-bviex5lwf3s-unsplash.jpg@webp'
+hero: '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/images/p/danist-bviex5lwf3s-unsplash.jpg'
 images:
-  - 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/images/p/danist-bviex5lwf3s-unsplash.jpg@webp'
+  - '/cdn-cgi/image/height=1080,quality=75,format=avif/https://static.eartharoid.me/images/p/danist-bviex5lwf3s-unsplash.jpg'
 # tags:
 #   - ''
 ---

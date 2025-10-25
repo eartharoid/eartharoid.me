@@ -3,13 +3,13 @@ title: "Discord Tickets"
 date: 2021-01-19T11:36:34Z
 draft: false
 description: 'An advanced Discord ticket management system, a free and open-source alternative to common ticket bots.'
-logo: 'https://img.eartharoid.me/insecure/rs:auto:256/plain/s3://eartharoid/discord-tickets/logo/icon/light/icon.png@png'
+logo: '/cdn-cgi/image/width=256/https://static.eartharoid.me/discord-tickets/logo/icon/light/icon.png'
 weight: 30
-hero: 'https://img.eartharoid.me/insecure/pr:1080p/plain/s3://eartharoid/discord-tickets/banners/blurple-no-text.png@png'
+hero: '/cdn-cgi/image/height=1080,quality=75/https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png'
 images:
-  - 'https://img.eartharoid.me/insecure/rs:auto:512:288/plain/s3://eartharoid/sharex/21/08/msedge_EMI9yZjiHl.png@png'
-  - 'https://i.imgur.com/ukvcbrS.png'
-  - 'https://i.imgur.com/cJtMHUq.png'
+  - '/cdn-cgi/image/height=480,quality=75/sharex/21/08/msedge_EMI9yZjiHl.png'
+  - 'https://static.eartharoid.me/x/2025/10/ukvcbrS.png'
+  - 'https://static.eartharoid.me/x/2025/10/cJtMHUq.png'
 tags:
     - 'node.js'
     - 'discord'
@@ -67,7 +67,7 @@ If you choose SQLite, which is the default as it is the easiest, you don't need 
 
 If the [documentation](https://discordtickets.app) leaves you with questions, you can ask for help in the [discussions](https://github.com/discord-tickets/bot/discussions/categories/support-q-a) or join the support server on Discord.
 
-[![Join the Discord server](https://img.eartharoid.me/insecure/rs:auto:440:200/plain/s3://eartharoid/images/join-discord.png@png)](https://lnk.earth/discord)
+[![Join the Discord server](/cdn-cgi/image/height=200/https://static.eartharoid.me/images/join-discord.png)](https://lnk.earth/discord)
 
 #### Donate
 

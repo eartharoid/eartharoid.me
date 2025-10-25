@@ -5,9 +5,9 @@ draft: false
 description: 'Fast, open and free-to-use new tab page for modern browsers.'
 weight: 40
 logo: 'https://github.com/mue.png'
-hero: 'https://i.imgur.com/SLQXBa7.jpeg'
+hero: 'https://static.eartharoid.me/x/2025/10/SLQXBa7.jpeg'
 images:
-  - 'https://i.imgur.com/SLQXBa7.jpeg'
+  - 'https://static.eartharoid.me/x/2025/10/SLQXBa7.jpeg'
   - 'https://cdn.statically.io/gh/mue/mue/main/assets/screenshot.webp'
   - 'https://cdn.statically.io/gh/mue/mue/main/assets/screenshot2.webp'
 tags:
@@ -51,7 +51,7 @@ Mue is a fast, open and free-to-use browser extension that gives a new, fresh an
 
 *A demo of the tab can be found [here](https://demo.muetab.com), and the latest GitHub commit build [here](https://mue.vercel.app)*
 
-[![Install on Chrome](https://i.imgur.com/11mV0bd.png)](https://chrome.google.com/webstore/detail/mue/bngmbednanpcfochchhgbkookpiaiaid)
+[![Install on Chrome](https://static.eartharoid.me/x/2025/10/11mV0bd.png)](https://chrome.google.com/webstore/detail/mue/bngmbednanpcfochchhgbkookpiaiaid)
 [![Install on Firefox](https://raw.githubusercontent.com/mue/mue/main/assets/firefox.png)](https://addons.mozilla.org/firefox/addon/mue)
 
 ## My role
