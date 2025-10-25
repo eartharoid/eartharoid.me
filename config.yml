@@ -8,7 +8,7 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 params:
-  description: "Hi. I'm Isaac, a 19 year-old student, developer, and photographer from England."
+  description: "Hi. I'm Isaac, a software developer from England."
   hero: "https://eartharoid.me/cdn-cgi/image/height=1080,format=avif/https://static.eartharoid.me/images/p/earth-sunset-from-space.jpg"
   navbarLogo: "https://eartharoid.me/cdn-cgi/image/width=100/https://static.eartharoid.me/eartharoid/logo/c/wordmark.png"
   logo: "https://eartharoid.me/cdn-cgi/image/width=128/https://static.eartharoid.me/eartharoid/logo/c/icon.png"
