@@ -7,7 +7,7 @@ logo: '/cdn-cgi/image/width=256/https://static.eartharoid.me/discord-tickets/log
 weight: 30
 hero: '/cdn-cgi/image/height=1080,quality=75/https://static.eartharoid.me/discord-tickets/banners/blurple-no-text.png'
 images:
-  - '/cdn-cgi/image/height=480,quality=75/sharex/21/08/msedge_EMI9yZjiHl.png'
+  - '/cdn-cgi/image/height=480,quality=75/https://static.eartharoid.me/sharex/21/08/msedge_EMI9yZjiHl.png'
   - 'https://static.eartharoid.me/x/2025/10/ukvcbrS.png'
   - 'https://static.eartharoid.me/x/2025/10/cJtMHUq.png'
 tags:
